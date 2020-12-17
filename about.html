@@ -126,7 +126,7 @@
   <div class="container-fluid">
     <div class="row">
      <!-- Навигация -->
-     <div class="col-1">
+     <div class="col-lg-1 col-md-1">
       <div class="left_nav">
         <img src="assets/img/section.png">
         <span>Meakon</span>
@@ -135,14 +135,14 @@
     <!-- //Навигация -->
 
     <!-- Описание блока -->
-    <div class="col-3">
+    <div class="col-lg-3 col-md-5 col-sm-12">
       <h2>О компании</h2>
       <p class="d-none">H7 Headline Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее </p>
     </div>
     <!-- //Описание блока -->
 
     <!-- текст о компании -->
-    <div class="col-8">
+    <div class="col-lg-8 col-md-6 col-sm-12">
        <div class="about_text">
         <!-- text1 -->
         <div>
@@ -162,19 +162,19 @@
   </div>
       <div class="row">
      <!-- Навигация -->
-     <div class="col-1">
+     <div class="col-lg-1 col-md-1 col-sm-12">
       <div class="left_nav">
       </div>
     </div>
     <!-- //Навигация -->
 
     <!-- Описание блока -->
-    <div class="col-3">
+    <div class="col-lg-3 col-md-5 col-sm-12">
     </div>
     <!-- //Описание блока -->
 
     <!-- текст о компании -->
-    <div class="col-8">
+    <div class="col-lg-8 col-md-6 col-sm-12">
        <div class="about_text_col3">
 
         <!-- text1 -->
@@ -220,7 +220,7 @@
   <div class="container-fluid">
     <div class="row">
       <!-- Навигация -->
-      <div class="col-1">
+      <div class="col-lg-1 col-md-1 col-sm-1">
         <div class="left_nav">
           <img src="assets/img/section_black.png">
           <span>принципы</span>
@@ -229,14 +229,14 @@
       <!-- //Навигация -->
 
       <!-- Описание блока -->
-    <div class="col-3">
+    <div class="col-lg-3 col-md-5 col-sm-12">
       <h2>Работаем честно, работаем открыто</h2>
       <p class="desc"></p>
     </div>
     <!-- //Описание блока -->
 
     <!-- Описание блока -->
-    <div class="col-8">
+    <div class="col-lg-8 col-md-6 col-sm-12 ">
              <div class="about_text_col4">
         <!-- text1 -->
         <div>
@@ -269,16 +269,16 @@
     </div>
     <div class="row commrads">
        <!-- Навигация -->
-      <div class="col-1">
+      <div class="col-lg-1 col-md-1 d-sm-none d-md-none d-lg-block">
         <div class="left_nav">
           <img src="assets/img/section_black.png">
           <span>команды</span>
         </div>
       </div>
       <!-- //Навигация -->
-      <div class="col-2"></div>
+      <div class="col-lg-2   d-sm-none d-md-none d-lg-block"></div>
       <!-- Описание блока -->
-      <div class="col-9">
+      <div class="col-lg-9 col-md-12 col-sm-12">
         <!-- Swiper -->
         <div class="swiper-container swiper_docs">
           <div class="swiper-wrapper">
@@ -343,10 +343,10 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper_docs', {
-      slidesPerView: 4,
+       
       loop: true,
        autoplay: {
-    delay: 5000,
+    delay: 6000,
   },
   navigation: {
         nextEl: '.swiper-button-next',
@@ -361,7 +361,7 @@
       breakpoints: {
         320: {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
         768: {
           slidesPerView: 2,
@@ -387,7 +387,7 @@
   <div class="container-fluid">
     <div class="row">
     <!-- Навигация -->
-    <div class="col-1">
+    <div class="col-lg-1 col-md-1 col-sm-1">
       <div class="left_nav">
         <img src="assets/img/section.png">
         <span>партнеры</span>
@@ -396,13 +396,13 @@
     <!-- //Навигация -->
 
     <!-- Описание блока -->
-    <div class="col-3">
+    <div class="col-lg-3 col-md-6 col-sm-12">
       <h2>С нами <br/>
       работают</h2>
     </div>
     <!-- //Описание блока -->
 
-    <div class="col-8">
+    <div class="col-lg-8 col-md-5 col-sm-12">
       <!-- Swiper -->
       <div class="swiper-container swiper-banks">
         <div class="swiper-wrapper">
@@ -458,7 +458,7 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-banks', {
-      slidesPerView: 4,
+
       loop: true,
        autoplay: {
     delay: 5000,
@@ -476,9 +476,9 @@
       breakpoints: {
         320: {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 40,
         },
-        768: {
+        668: {
           slidesPerView: 2,
           spaceBetween: 40,
         },
@@ -501,11 +501,20 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-8">
+      <div class="col-lg-8 col-md-8 col-sm-12">
         <h3>Заголовок точки захвата по поводу сотрудничества</h3>  
       </div>
-      <div class="col-4">
-        <a href="#"><span>+</span>Стать партнером</a>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+                <a class="podrobnee_btn" href="#">
+                  <div class="btn_wrapper">
+                    <button class="learn-more">
+                      <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Стать портнером</span>
+                    </button>
+                  </div>
+                </a>
       </div>
     </div>
   </div>
