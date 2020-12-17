@@ -937,6 +937,11 @@ position: relative;
 		background-position: center;
 		z-index: 2;
 	}
+	.btn-center {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
 }
 .preFooter button.learn-more .circle {
 	background-color: white;
@@ -1945,6 +1950,28 @@ footer {
     width: 100%;
     margin: 0!important;
     padding: 40px 15px;
+}
+.preFooter h3 {
+	font-size: 30px;
+	font-weight: 400;
+}
+.preFooter .leaves {
+    width: 100%;
+    transform: rotate(90deg);
+    bottom: -123px;
+    top: unset;
+    left: unset;
+    right: -112px;
+       background-image: url(/assets/img/Group_375.png);
+}
+#contacts .offer {
+	padding-bottom: 0;
+}
+.preFooter {
+    width: 100%;
+    margin: 0 !important;
+    padding: 40px 15px;
+    margin-bottom: 150px!important;
 }
 
 }
