@@ -12,7 +12,7 @@ h2 {
 	font-family: 'Federo';
 	font-size: 50px;
 	line-height: 120%;
-}
+} 
 h3{
 	font-family: 'Federo';
 	font-size: 24px;
@@ -26,7 +26,7 @@ h4{
 p, span, div, ul, li, label, input {
 	font-family: "NotoSans",sans-serif;
 	font-weight: 400;
-	font-size: 1rem;	 
+	font-size: 1rem;	  
 }
 li{ 
 	list-style: none;
@@ -764,7 +764,11 @@ position: relative;
 		// border:1px solid red;
 		
 	}
+<<<<<<< HEAD
 	.banks  img {
+=======
+	.swiper-banks img {
+>>>>>>> 995889db07dc31e7a731a75b9020a564d96c6cf8
 		box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #D1D9E6;
 		border-radius: 5px;
 		background-color: #fff;
