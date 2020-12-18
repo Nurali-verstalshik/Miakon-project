@@ -122,7 +122,6 @@
 </header>
 <!-- //header -->
 
-
  
 
 <!-- section products -->
@@ -134,24 +133,96 @@
    <div class="row">
 
      <div class="col-3 filter"> 
-
-      <form action="">
+ 
         <ul class="filter_tabs">
           <!-- поиск -->
-          <li class="search_inputs">
-            <input type="text" name="search" placeholder="Поиск по товару" /><button></button>
-          </li>
+          <ul class="search_inputs">
+            <input type="text" name="search" placeholder="Поиск по товару" /><button class="search_btn"></button>
+          </ul>
           <!-- //поиск -->
-          <li><h3>Категории товаров</h3></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-         <li> <a href="#"><span>x</span> Очистить все фильтры</a></li>
-        </ul>
-      </form> 
 
-    </div>
+
+
+
+
+          <ul class="show">
+            <h3>Категории товаров</h3>
+            <div class="ac-container">
+            <div>
+              <input id="ac-1" name="accordion-1" type="checkbox">
+              <label class="have_sub" for="ac-1">Перчатки</label>
+              <article class="ac-small">
+                <ul class="filter_tab__subcat">
+                  <li> Подкатегория 1</li>
+                  <li> Подкатегория 2</li>
+                  <li> Подкатегория 3</li>
+                </ul>
+              </article>
+            </div>
+            <div>
+              <input id="ac-2" name="accordion-1" type="checkbox">
+              <label class="not_sub" for="ac-2">Скальпели</label>
+ 
+            </div>
+            <div>
+              <input id="ac-3" name="accordion-1" type="checkbox">
+              <label class="not_sub" for="ac-3">Медицинская одежда</label>
+              
+            </div>
+            <div>
+              <input id="ac-4" name="accordion-1" type="checkbox">
+              <label class="not_sub" for="ac-4">Маски</label>
+               
+            </div>
+            <div>
+              <input id="ac-5" name="accordion-1" type="checkbox">
+              <label class="not_sub" for="ac-5">Инфузионная система</label>
+               
+            </div>
+            <div>
+              <input id="ac-6" name="accordion-1" type="checkbox">
+              <label class="not_sub" for="ac-6">Шприцы</label>
+            
+            </div>
+            <div>
+              <input id="ac-7" name="accordion-1" type="checkbox">
+              <label class="have_sub" for="ac-7">Трансфизионные система</label>
+              <article class="ac-small">
+                  <ul class="filter_tab__subcat">
+                  <li> Подкатегория 1</li>
+                  <li> Подкатегория 2</li>
+                  <li> Подкатегория 3</li>
+                </ul>
+              </article>
+            </div>
+          </ul>
+
+
+ 
+       
+          
+          <ul class="filter_tabs__price show">
+            <h3>Цена</h3>
+          </ul>
+
+          <ul class="filter_tabs__material show">
+            <h3>Материал</h3>
+          </ul>
+
+          <ul class="filter_tabs__madeBy show">
+            <h3>Производитель</h3>
+          </ul>
+
+          <ul class="filter_tabs__country show">
+            <h3>Страна производства</h3>
+          </ul>
+
+         <ul> <a href="#"><span>x</span> Очистить все фильтры</a></ul>
+        </ul>
+   
+
+
+      </div>
     <div class="col-9 product"> 2 </div>
   </div>
 </div>
