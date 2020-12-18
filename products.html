@@ -24,6 +24,10 @@
   <link rel="stylesheet" href="assets/css/media.css">
   
 
+
+
+
+
   <title>Продукция</title>
 </head>
 <body id="filter_page">
@@ -204,27 +208,41 @@
           <ul class="filter_tabs__price show">
             <h3>Цена</h3>
 
-<div class="polzunok-container-5">
-    <input type="text" class="polzunok-input-5-left" />
-    <input type="text" class="polzunok-input-5-right "/>
-    <div class="polzunok-5"></div>
+<div class="range-slider">
+    <input type="text" class="js-range-slider" value="" />
 </div>
-<script>
-  
-</script>
+<div class="extra-controls">
+    <input type="text" class="js-input-from" value="0" />
+    <input type="text" class="js-input-to" value="0" />
+</div>
 
           </ul>
 
           <ul class="filter_tabs__material show">
             <h3>Материал</h3>
+            <ul class="filter_tab__subcat">
+              <li> <input type="checkbox" name="" > Подкатегория 1</li>
+              <li> <input type="checkbox" name="" > Подкатегория 2</li>
+              <li> <input type="checkbox" name="" > Подкатегория 3</li>
+            </ul>
           </ul>
 
           <ul class="filter_tabs__madeBy show">
             <h3>Производитель</h3>
+             <ul class="filter_tab__subcat">
+                  <li> <input type="radio" name="" > Подкатегория 1</li>
+                  <li> <input type="radio" name="" > Подкатегория 2</li>
+                  <li> <input type="radio" name="" > Подкатегория 3</li>
+                </ul>
           </ul>
 
           <ul class="filter_tabs__country show">
             <h3>Страна производства</h3>
+             <ul class="filter_tab__subcat">
+                  <li> <input type="checkbox" name="" > Подкатегория 1</li>
+                  <li> <input type="checkbox" name="" > Подкатегория 2</li>
+                  <li> <input type="checkbox" name="" > Подкатегория 3</li>
+                </ul>
           </ul>
 
          <ul> <a href="#"><span>x</span> Очистить все фильтры</a></ul>
@@ -253,74 +271,80 @@
 
 
 
+  <!--Plugin CSS file with desired skin-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+  
+  <!--jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <!--Plugin JavaScript file-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
 
+<script>
+var $range = $(".js-range-slider"),
+    $inputFrom = $(".js-input-from"),
+    $inputTo = $(".js-input-to"),
+    instance,
+    min = 0,
+    max = 1000,
+    from = 0,
+    to = 0;
 
+$range.ionRangeSlider({
+  skin: "round",
+    type: "double",
+    min: min,
+    max: max,
+    from: 200,
+    to: 800,
+    onStart: updateInputs,
+    onChange: updateInputs
+});
+instance = $range.data("ionRangeSlider");
 
+function updateInputs (data) {
+  from = data.from;
+    to = data.to;
+    
+    $inputFrom.prop("value", from);
+    $inputTo.prop("value", to); 
+}
 
+$inputFrom.on("input", function () {
+    var val = $(this).prop("value");
+    
+    // validate
+    if (val < min) {
+        val = min;
+    } else if (val > to) {
+        val = to;
+    }
+    
+    instance.update({
+        from: val
+    });
+});
+
+$inputTo.on("input", function () {
+    var val = $(this).prop("value");
+    
+    // validate
+    if (val < from) {
+        val = from;
+    } else if (val > max) {
+        val = max;
+    }
+    
+    instance.update({
+        to: val
+    });
+});
+</script>
 
   <!-- Optional JavaScript -->
 <!--   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha512-ANkGm5vSmtDaoFA/NB1nVJzOKOiI4a/9GipFtkpMG8Rg2Bz8R1GFf5kfL0+z0lcv2X/KZRugwrAlVTAgmxgvIg==" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/main.js"></script> -->
-
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery-1.7.min.js"></script>
-<script src="assets/js/jquery-ui.min.js"></script>
-<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
-
-
-
-<script>
- $(".polzunok-5").slider({
-    min: 0,
-    max: 5000,
-    values: [2000, 3000],
-    range: true,
-    animate: "fast",
-    slide : function(event, ui) {    
-        $(".polzunok-input-5-left").val(ui.values[ 0 ]);   
-        $(".polzunok-input-5-right").val(ui.values[ 1 ]);  
-    }    
-});
-$(".polzunok-input-5-left").val($(".polzunok-5").slider("values", 0));
-$(".polzunok-input-5-right").val($(".polzunok-5").slider("values", 1));
-$(".polzunok-container-5 input").change(function() {
-    var input_left = $(".polzunok-input-5-left").val().replace(/[^0-9]/g, ''),    
-    opt_left = $(".polzunok-5").slider("option", "min"),
-    where_right = $(".polzunok-5").slider("values", 1),
-    input_right = $(".polzunok-input-5-right").val().replace(/[^0-9]/g, ''),    
-    opt_right = $(".polzunok-5").slider("option", "max"),
-    where_left = $(".polzunok-5").slider("values", 0); 
-    if (input_left > where_right) { 
-        input_left = where_right; 
-    }
-    if (input_left < opt_left) {
-        input_left = opt_left; 
-    }
-    if (input_left == "") {
-    input_left = 0;    
-    }        
-    if (input_right < where_left) { 
-        input_right = where_left; 
-    }
-    if (input_right > opt_right) {
-        input_right = opt_right; 
-    }
-    if (input_right == "") {
-    input_right = 0;    
-    }    
-    $(".polzunok-input-5-left").val(input_left); 
-    $(".polzunok-input-5-right").val(input_right); 
-    if (input_left != where_left) {
-        $(".polzunok-5").slider("values", 0, input_left);
-    }
-    if (input_right != where_right) {
-        $(".polzunok-5").slider("values", 1, input_right);
-    }
-});
-
-</script>
-
 </body>
 </html>

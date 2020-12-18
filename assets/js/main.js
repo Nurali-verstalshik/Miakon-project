@@ -77,5 +77,3 @@ $('a[href*=#]:not([href=#])').click(function() {
   Menu.init();
   
 }());
-
- 
