@@ -2261,7 +2261,7 @@ li.cifra_desc {
 	width: 70px;
 	height: 40px;
 	padding: 20px;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat!important;
 	background-position: center;
 }
 #aboutPage .swiper-button-prev {
@@ -2291,7 +2291,7 @@ li.cifra_desc {
 	width: 70px;
 	height: 40px;
 	padding: 20px;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat!important;
 	background-position: center;
 }
 .swiper-banks .swiper-button-prev {
@@ -2326,7 +2326,7 @@ li.cifra_desc {
 		width: 70px;
 		height: 40px;
 		padding: 20px;
-		background-repeat: no-repeat;
+		background-repeat: no-repeat!important;
 		background-position: center;
 	}
 	#aboutPage .swiper-button-prev {
@@ -2356,7 +2356,7 @@ li.cifra_desc {
 		width: 70px;
 		height: 40px;
 		padding: 20px;
-		background-repeat: no-repeat;
+		background-repeat: no-repeat!important;
 		background-position: center;
 	}
 	.swiper-banks .swiper-button-prev {
@@ -2387,17 +2387,17 @@ li.cifra_desc {
 		width: 70px;
 		height: 40px;
 		padding: 20px;
-		background-repeat: no-repeat;
+		background-repeat: no-repeat!important;
 		background-position: center;
 	}
-	.swiper-banks .swiper-button-next {
-		background-image: url("/assets/img/arrow_white.svg")!important;
+	.swiper-banks .swiper-button-next { 
 		bottom: 0px!important;
+ 
 	}
 
 	.swiper_docs .swiper-button-prev {
 		background-image: url("/assets/img/arrow_white.svg") !important;
-		background-repeat: no-repeat;
+		background-repeat: no-repeat!important;
 		background-position: center;
 	}
 	.swiper_docs .swiper-button-next {

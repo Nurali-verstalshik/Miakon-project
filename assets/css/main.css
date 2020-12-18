@@ -2160,7 +2160,7 @@ footer .footer_info {
     width: 70px;
     height: 40px;
     padding: 20px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-position: center;
   }
 
@@ -2189,7 +2189,7 @@ footer .footer_info {
     width: 70px;
     height: 40px;
     padding: 20px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-position: center;
   }
 
@@ -2226,7 +2226,7 @@ footer .footer_info {
     width: 70px;
     height: 40px;
     padding: 20px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-position: center;
   }
 
@@ -2255,7 +2255,7 @@ footer .footer_info {
     width: 70px;
     height: 40px;
     padding: 20px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-position: center;
   }
 
@@ -2285,18 +2285,17 @@ footer .footer_info {
     width: 70px;
     height: 40px;
     padding: 20px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-position: center;
   }
 
   .swiper-banks .swiper-button-next {
-    background-image: url("/assets/img/arrow_white.svg") !important;
     bottom: 0px !important;
   }
 
   .swiper_docs .swiper-button-prev {
     background-image: url("/assets/img/arrow_white.svg") !important;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-position: center;
   }
 
