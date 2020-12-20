@@ -1436,8 +1436,8 @@ border-radius: 6px;
 .preFooter button.learn-more .circle .icon.arrow::before {
     position: absolute;
     content: "+";
-    top: -11px;
-    right: 0.0925rem;
+    top: -9px;
+    right: 2px;
     width: 0.625rem;
     height: 0.625rem;
     color: #73869F;
@@ -1522,8 +1522,8 @@ button.learn-more .circle .icon.arrow::before {
 
           position: absolute;
           content: '+';
-          top: -11px;
-          right: 0.0925rem;
+          top: -9px;
+          right: 2px;
           width: 0.625rem;
           height: 0.625rem;
           color: white;
@@ -1549,14 +1549,18 @@ button.learn-more .button-text {
   align-items: center;
 }
 button:hover .circle {
-  width: 115%;
+  width: 100%;
 }
 button:hover .circle .icon.arrow {
   -webkit-transform: translate(0.7rem, 0);
           transform: translate(0.7rem, 0);
+          left: 2px;
 }
 button:hover .button-text {
   color: #fff;
+}
+button:hover .button-text {
+	left: 15px;
 }
 
 
