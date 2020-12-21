@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap-grid.css" integrity="sha512-CMBZvpj8E19AmB3ZULO2jpuOcxB0GXNaynnu3tthGhMM37FSIoBAXXj4Nmdxsu2Rrpl0nG6h141KeCS/1itkzw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap-reboot.min.css" integrity="sha512-TxcCDZfjPRLa2vJHDnCDjixF+PDgNtS69nOt34BgAvYIZHF6pFJZPeqBfSqTDni5D2ZRtwFRDgUfjrQCl8VgXA==" crossorigin="anonymous" />
+  <!-- swiper -->
+  <!-- <link rel="stylesheet" href="css/swiper-bundle.css"> -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <!-- <script src="js/swiper-bundle.js"></script> -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+
+  <!-- fonts -->
+  <link rel="preload" href="assets/fonts/Federov2.ttf" as="font">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" > 
+  <!-- styles -->
+  <link rel="stylesheet" href="assets/fonts/fonts.css"> 
+  <link rel="stylesheet" href="assets/css/main.css"> 
+  <link rel="stylesheet" href="assets/css/media.css">
+  
+  <title>Карточка товара</title>
+</head>
+
+<body id="product_card">
+<!-- header -->
+<!-- mobileMenu -->
+<header class="header">
+  <div class="mlogo"><img src="assets/img/mobile_logo.png" alt=""></div>
+  <div class="mswaper">     
+
+   <div class="switcher2">
+    <div class="center">
+      <span class="lang2">RU</span>
+      <input type="checkbox" id="cbx2" style="display:none"/>
+      <label for="cbx2" class="toggle2"><span></span></label>
+      <span class="lang2">ENG</span>    
+    </div>
+  </div>
+</div>
+
+<div class="burger">
+  <div class="burger__patty"></div>
+  <div class="burger__patty"></div>
+  <div class="burger__patty"></div>
+</div>
+
+<nav class="menu">
+  <div class="menu__brand"></div>
+  <ul class="menu__list">
+    <li class="menu__item"><a href="products.html" class="menu__link" target="">Продукция</a></li>
+    <li class="menu__item"><a href="about.html" class="menu__link" target="">О компании</a></li>
+    <li class="menu__item"><a href="contacts.html" class="menu__link" target="">Контакты</a></li>
+
+    <li class="menu__item"><a href="tel:+78009998877" class="tel__link">+7 800 999 88 77</a></li>
+  </ul>
+</nav>
+</header>
+
+<section class="hero"></section>
+<!-- //mobileMenu -->
+
+
+<!-- header -->
+<header>
+  <!-- fix меню -->
+  <div class="container-fluid">
+    <div class="row offer_place">
+      <!-- logo + switcher -->
+      <div class="col-lg-4 col-md-12 top_menu">
+        <!-- logo -->
+        <a class="logo" href="index.html"><img src="assets/img/logo/logo.png"></a>
+        <!-- //logo -->
+        <!-- switcher -->
+        <div class="switcher">
+          <div class="center">
+            <span class="lang">RU</span>
+            <input type="checkbox" id="cbx" style="display:none"/>
+            <label for="cbx" class="toggle"><span></span></label>
+            <span class="lang">ENG</span>    
+          </div>
+        </div>
+        <!-- //switcher -->
+      </div>
+      <!-- logo + switcher -->
+
+      <!-- Nav header-->
+      <div class="col-lg-8 col-md-12 navi">
+        <nav>
+          <a class="nav_item active" href="products.html">Продукция</a>
+          <a class="nav_item" href="about.html">О компании</a>
+          <a class="nav_item" href="contacts.html">Контакты</a>
+          <!-- Telephone -->
+          <a href="tel:+7 800 999 88 77">+7 800 999 88 77</a>
+          <!-- //Telephone -->
+        </nav>
+      </div>
+      <!-- //Nav header-->
+    </div>
+  </div>
+  <!-- //fix меню --> 
+</header>
+<!-- //header -->
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <!-- хлебные крошки -->
+      <div class="breadthums">
+        <ul> 
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="products.html">Каталог</a></li>
+          <li><a class="active">Карточка товара</a></li>
+        </ul>
+      </div>
+      <!-- //хлебные крошки --> 
+    </div>
+  </div> 
+</div>
+ 
+<section class="product_card">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- колонка изображений -->
+      <div class="col-lg-5">
+       <div class="product_card__images zoom-gallery">
+        <div class="product_card__images__min">
+          <img src="assets/img/product/1.png">
+          <img src="assets/img/product/1_1.png">
+          <img src="assets/img/product/1.png">
+          <img src="assets/img/product/1_1.png">
+        </div>
+        <div class="product_card__images__big">
+          <div class="product_card__images__big__wrapper">
+            <a href="assets/img/product/1_big.png" data-source="assets/img/product/1_big.png" >
+              <img src="assets/img/product/1_big.png">
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- //колонка изображений -->
+
+      <!-- Описание товара -->
+      <div class="col-lg-7">
+          <div class="product_card__title"><h1>Перчатки СМОТРОВЫЕ Cranberry R200 нитрил. неопудр. текст.н/стер р.S</h1></div>
+          <div class="product_card__header"><span>номер регистрационного удостоверения:  1231578555963542541</span></div>
+          <div class="product_card__desc">
+            <div class="product_card__desc__column">
+              <ul>
+                <li>Размер:<span>XS, S, M, L, XL</span></li>
+                <li>Производитель:<span>CФМ</span></li>
+                <li>Страна производства:<span>Германия</span></li>
+                <li>Единица измерения:<span>Пара</span></li>
+                <li>Кол-во в упаковке:<span>100</span></li>
+                <li>Кол-во в транспортной коробке:<span>1000</span></li>
+              </ul>
+            </div>
+     
+            <div class="product_card__desc__column"></div>
+          </div>
+          <div class="product_card__price"></div>
+      </div>
+      <!-- Описание товара -->
+    </div>
+  </div>
+</section>
+
+<section class="product_tabs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="container-fluid">
+    <div class="col-12 footer_info">
+       <span>© 2020 Meakon. Все права защищены.</span> 
+       <span>Разработано в <a href="#">Stebnev-Studio</a></span> 
+    </div>
+  </div>
+</footer>
+<!-- //footer -->
+ <script type="text/javascript" src="/assets/js/main.js"></script>
+
+
+
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="/assets/js/magnific/magnific-popup.css">
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="/assets/js/magnific/jquery.magnific-popup.min.js"></script>
+<!-- зум -->
+<script>
+$(document).ready(function() {
+  $('.zoom-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    closeOnContentClick: false,
+    closeBtnInside: false,
+    mainClass: 'mfp-with-zoom mfp-img-mobile',
+    image: {
+      verticalFit: true,
+      titleSrc: function(item) {
+        return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+      }
+    },
+    gallery: {
+      enabled: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300, // don't foget to change the duration also in CSS
+      opener: function(element) {
+        return element.find('img');
+      }
+    }
+    
+  });
+});
+</script>
+
+  <!-- Optional JavaScript -->
+<!--   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha512-ANkGm5vSmtDaoFA/NB1nVJzOKOiI4a/9GipFtkpMG8Rg2Bz8R1GFf5kfL0+z0lcv2X/KZRugwrAlVTAgmxgvIg==" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script> -->
+</body>
+</html>
