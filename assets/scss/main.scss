@@ -368,6 +368,9 @@ nav a:last-child {
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(154, 153, 153, 0.5);
   transition: all 0.2s ease;
+  background: #73869F;
+box-shadow: 3px 3px 3px #AABCD3, -3px -3px 3px #FFFFFF;
+border-radius: 50px;
 }
 .toggle span:before {
   content: "";
@@ -390,7 +393,10 @@ nav a:last-child {
   background: #009CDB;
   transform: translateX(20px);
   transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
-  box-shadow: 0 3px 8px rgba(79, 46, 220, 0.2);
+  // box-shadow: 0 3px 8px rgba(79, 46, 220, 0.2);
+  background: #73869F;
+box-shadow: 3px 3px 3px #AABCD3, -3px -3px 3px #FFFFFF;
+border-radius: 50px;
 }
 #cbx:checked + .toggle span:before {
   transform: scale(1);
