@@ -152,7 +152,8 @@
           <div class="product_card__header"><span>номер регистрационного удостоверения:  1231578555963542541</span></div>
           <div class="product_card__desc">
             <div class="product_card__desc__column">
-              <ul>
+
+              <ul> 
                 <li>Размер:<span>XS, S, M, L, XL</span></li>
                 <li>Производитель:<span>CФМ</span></li>
                 <li>Страна производства:<span>Германия</span></li>
@@ -160,11 +161,33 @@
                 <li>Кол-во в упаковке:<span>100</span></li>
                 <li>Кол-во в транспортной коробке:<span>1000</span></li>
               </ul>
+
+              <div class="product_card__desc__column__special">
+                <h2>Запросить цену</h2>
+
+                    <a class="podrobnee_btn" href="#">
+                      <div class="btn_wrapper">
+                        <button class="learn-more">
+                          <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                          </span>
+                          <span class="button-text">Запросить цену</span>
+                        </button>
+                      </div>
+                    </a>
+
+              </div>
+
+              <ul class="product_card__price">
+                <li>
+                  Цена за пару: <span>23,40 руб.</span>
+                </li>
+              </ul>
+
             </div>
      
-            <div class="product_card__desc__column"></div>
-          </div>
-          <div class="product_card__price"></div>
+
+          </div> 
       </div>
       <!-- Описание товара -->
     </div>
@@ -173,9 +196,38 @@
 
 <section class="product_tabs">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row"> 
       <div class="col-lg-12">
-        
+
+                <div class="tabs">
+                  <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                  <label for="tab-btn-1">Описание</label>
+                  <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                  <label for="tab-btn-2">Характеристики</label>
+                  <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                  <label for="tab-btn-3">Отзывы о товаре</label>
+
+                  <div id="content-1">
+                    <p>Перчатки смотровые синтетические нестерильные неопудренные текстурированные только на пальцах НИТРИЛОВЫЕ кобальт блю цвета; материал - нитрил; назначение - смотровые диагностические; коэффициент AQL (приемлемый уровень качества) - не более 1,5 (указано на упаковке) ; неанатомические (без разделения на правую и левую руки); текстурированные только на пальцах; перчатки смотровые синтетические нестерильные неопудренные текстурированные только на пальцах НИТРИЛОВЫЕ кобальт блю цвета; материал - нитрил; назначение - смотровые диагностические; коэффициент AQL (приемлемый уровень качества) - не более 1,5 (указано на упаковке) ; неанатомические (без разделения на правую и левую руки); текстурированные только на пальцах; </p>
+                  </div>
+                  <div id="content-2">
+
+                    <ol> 
+                      <li>Размер:<span>XS, S, M, L, XL</span></li>
+                      <li>Производитель:<span>CФМ</span></li>
+                      <li>Страна производства:<span>Германия</span></li>
+                      <li>Единица измерения:<span>Пара</span></li>
+                      <li>Кол-во в упаковке:<span>100</span></li>
+                      <li>Кол-во в транспортной коробке:<span>1000</span></li>
+                  </ol>
+
+
+                  </div>
+                  <div id="content-3">
+                    Содержимое 3...
+                  </div>
+                </div>
+
       </div>
     </div>
   </div>
@@ -213,9 +265,6 @@ $(document).ready(function() {
     mainClass: 'mfp-with-zoom mfp-img-mobile',
     image: {
       verticalFit: true,
-      titleSrc: function(item) {
-        return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-      }
     },
     gallery: {
       enabled: true
@@ -227,7 +276,6 @@ $(document).ready(function() {
         return element.find('img');
       }
     }
-    
   });
 });
 </script>

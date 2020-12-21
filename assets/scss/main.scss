@@ -1360,11 +1360,17 @@ border-radius: 6px;
 --------------------------------*/
 
 .product_card {
-
 	margin-top: 288px;
-	div{
-		border: 1px solid red;
+	margin-bottom: 150px;
+	h2{
+		font-size: 20px;
+		color: white;
+		margin-bottom: 20px;
 	}
+	div{
+		border: 0px solid red;
+	}
+
 }
 .product_card__title h1{
 	font-size: 50px;
@@ -1389,6 +1395,13 @@ span{
 	font-size: 16px;
 	line-height: 180%;
 	color: #73869F;
+	max-width: 50%;
+	float: left;
+	clear: both;
+	li{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+	}
 }
 .product_card__images {
     display: flex;
@@ -1403,10 +1416,11 @@ span{
 	margin-left: 7%; 
 	cursor: pointer;
 }
-.product_card__images__min img{
+.product_card__images__min img:not(:last-child){
 	display: block;
-	margin-bottom: 14px;
+	margin-bottom: 20px;
 }
+
 .product_card__images__big {
 	margin-left: 30px;
 }
@@ -1422,7 +1436,19 @@ span{
 .product_card__images__big__wrapper:hover::before {
 	content: "";
 	transition: 1s;
-	opacity: 1;
+	opacity: 0.7;
+}
+.product_card__images__big__wrapper a::before {
+	content: ""; 
+	// opacity: 0.7;
+	// background: rgba(239, 244, 247, 0.3); 
+	border-radius: 10px;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 .product_card__images__big__wrapper::before {
 	content: " ";
@@ -1431,14 +1457,52 @@ span{
 	min-height: 55px; 
 	display: inline-flex;
 	align-self: center;
-	top: 44%;
+	top: 45%;
 	background-image: url('/assets/img/product/zoom.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor:zoom-in!important;
 	z-index: 1;
-	opacity: 0.5;
+	opacity: 0.0;
 	transition: 1s;
+}
+.product_card__desc__column span {
+	color: #00294C;
+}
+.product_card__desc__column__special {
+	background: #73869F; border-radius: 10px;
+	min-width: 420px;
+	float: right;
+	padding: 27px 50px;
+	.podrobnee_btn{
+		
+		button.learn-more .circle {
+			background-color: #fff;
+			box-shadow: 5px 5px 5px #677992, -5px -5px 5px #93A6BF;
+			border-radius: 50px;
+		}
+		button.learn-more .circle .icon.arrow::before { 
+			color: #73869F;
+		}
+		.button-text{
+			color: white;
+		}
+		button:hover .circle .icon.arrow::before {
+			content: "→";
+			font-size: 20px;
+			transition: 0.3s;
+			top: -12px;
+		}
+		button:hover .button-text {
+			left: 15px;
+			color: #73869F !important;
+		}
+	}
+}
+.product_card__price span{
+	color: #009CDB;
+	font-size: 24px;
+	font-weight: bold;
 }
 
 
@@ -1474,7 +1538,107 @@ span{
 --------------------------------*/
 
 
+/*-------------------------------
+			  табы
+--------------------------------*/
 
+    .tabs {
+      max-width: 65%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-left: 200px;
+    }
+
+    .tabs>input[type="radio"] {
+      display: none;
+    }
+
+    .tabs>input[type="radio"]:checked+label {
+    	background: #EFF4F7;
+    	box-shadow: inset -5px -5px 5px #FFFFFF, inset 5px 5px 5px #D1D9E6;
+    	border-radius: 195px;
+    	padding: 10px 30px;
+    	transition: 1s;
+    	position: relative;
+    	z-index: 99;
+    }
+     .tabs>input[type="radio"]:checked+label::before {
+     	content: "";
+     	width: 100px;
+     	height: 50px;
+     	border: 1px solid red;
+     	background-color: #fff;
+     	position: absolute;
+     	z-index: 1;
+     	left: 0;
+     	right: 0;
+     	top: 0;
+
+     }
+
+    .tabs>div {
+      /* скрыть контент по умолчанию */
+      display: none;
+      border: 1px solid #eee;
+      padding: 10px 15px;
+      border-radius: 4px;
+      transition:1s;
+    }
+    #content-1,#content-2,#content-3 {
+    	background-color: #fff;
+    	position: relative;
+    	top: -20px;
+    	z-index: -1;
+    	padding-top: 30px;
+    }
+    /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+    #tab-btn-1:checked~#content-1,
+    #tab-btn-2:checked~#content-2,
+    #tab-btn-3:checked~#content-3 {
+      display: block;
+      transition:1s;
+    }
+
+    #content-2 ol {
+    	padding: 0;
+    	li{
+    		display: grid;
+    		grid-template-columns: repeat(2, 37%);
+    	}
+    	li:nth-child(even) {
+    		background-color: #EFF4F7;
+    	}
+    }
+
+    .tabs>label {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      user-select: none;
+      background-color: #eee;
+      border: 1px solid transparent;
+      padding: 2px 8px;
+      font-size: 18px;
+	  color: #00294C;
+      line-height: 1.5;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: 1s;
+      margin-left: 50px;
+      background: #EFF4F7;
+      box-shadow: -5px -5px 5px #FFFFFF, 5px 5px 5px #D1D9E6;
+      border-radius: 95px;
+          	padding: 10px 30px;
+    }
+
+    .tabs>label:first-of-type {
+      margin-left: 50px;
+    }
+
+/*-------------------------------
+			 // табы
+--------------------------------*/
 
 
 /*-------------------------------
@@ -1649,7 +1813,7 @@ button.learn-more .circle .icon.arrow::before {
 
           position: absolute;
           content: '+';
-          top: -9px;
+          top: -10px;
           right: 2px;
           width: 0.625rem;
           height: 0.625rem;
@@ -1679,6 +1843,7 @@ button:hover .circle {
   width: 100%;
 }
 button:hover .circle .icon.arrow {
+	content: "&rarr;";
   -webkit-transform: translate(0.7rem, 0);
           transform: translate(0.7rem, 0);
           left: 2px;
