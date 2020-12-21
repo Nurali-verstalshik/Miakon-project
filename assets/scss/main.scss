@@ -1543,7 +1543,7 @@ span{
 --------------------------------*/
 
     .tabs {
-      max-width: 65%;
+      max-width: 75%;
       margin-left: auto;
       margin-right: auto;
       margin-left: 200px;
@@ -1563,16 +1563,16 @@ span{
     	z-index: 99;
     }
      .tabs>input[type="radio"]:checked+label::before {
-     	content: "";
-     	width: 100px;
-     	height: 50px;
-     	border: 1px solid red;
-     	background-color: #fff;
-     	position: absolute;
-     	z-index: 1;
-     	left: 0;
-     	right: 0;
-     	top: 0;
+     	// content: "";
+     	// width: 100px;
+     	// height: 50px;
+     	// border: 1px solid red;
+     	// background-color: #fff;
+     	// position: absolute;
+     	// z-index: 1;
+     	// left: 0;
+     	// right: 0;
+     	// top: 0;
 
      }
 
@@ -1587,9 +1587,9 @@ span{
     #content-1,#content-2,#content-3 {
     	background-color: #fff;
     	position: relative;
-    	top: -20px;
+    	top: -30px;
     	z-index: -1;
-    	padding-top: 30px;
+    	padding: 50px;
     }
     /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
     #tab-btn-1:checked~#content-1,
@@ -1634,6 +1634,16 @@ span{
 
     .tabs>label:first-of-type {
       margin-left: 50px;
+    }
+
+
+    .form_review__title h3 {
+    	text-align: center;
+    }
+    
+    .form_review__body {
+    	display: grid;
+    	grid-template-columns: repeat(2,1fr);
     }
 
 /*-------------------------------
