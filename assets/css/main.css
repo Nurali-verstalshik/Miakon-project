@@ -1496,7 +1496,6 @@ section .desc {
   box-shadow: inset -5px -5px 5px #FFFFFF, inset 5px 5px 5px #D1D9E6;
   border-radius: 195px;
   padding: 10px 30px;
-  transition: 1s;
   position: relative;
   z-index: 99;
   border: 9px solid #EFF4F9;
@@ -1508,7 +1507,6 @@ section .desc {
   border: 1px solid #eee;
   padding: 10px 15px;
   border-radius: 4px;
-  transition: 1s;
 }
 
 #content-1, #content-2, #content-3 {
@@ -1526,7 +1524,6 @@ section .desc {
 #tab-btn-2:checked ~ #content-2,
 #tab-btn-3:checked ~ #content-3 {
   display: block;
-  transition: 1s;
 }
 
 #content-2 ol {
@@ -3138,6 +3135,7 @@ footer .footer_info {
 .tabs > label:first-of-type,
 .tabs > label {
     margin: 0;
+    transition: unset;
   }
 
   .product_card__images__big__wrapper img {
@@ -3318,5 +3316,57 @@ footer .footer_info {
 @media (min-width: 767px) and (max-width: 1100px) {
   .breadthums {
     top: 190px;
+  }
+
+  header nav {
+    margin: 0 40px !important;
+  }
+
+  nav a:last-child {
+    margin-left: 60px;
+  }
+
+  .product_card__title {
+    margin: 60px 0;
+    text-align: center;
+  }
+
+  .product_card__header {
+    margin: 30px 0;
+  }
+  .product_card__header span {
+    text-align: center;
+    display: block;
+  }
+
+  .product_card__desc__column__special {
+    min-width: 100%;
+  }
+
+  section h2 {
+    margin-top: 0;
+  }
+
+  .product_card__desc__column__special {
+    padding: 30px;
+  }
+
+  .product_card__desc ul li {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 100%));
+  }
+
+  .product_card__price {
+    margin-top: 50px;
+  }
+
+  .tabs > label:first-of-type,
+.tabs > label {
+    margin-left: 5px;
+    transition: unset;
+  }
+
+  .similar_products .card {
+    max-width: 100%;
   }
 }
