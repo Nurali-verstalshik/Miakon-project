@@ -3242,6 +3242,17 @@ details[open] summary {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "+";
+    top: -10px;
+    right: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
+    color: white;
+    font-size: 30px;
+  }
+
   .list .product_item img {
     max-width: 100%;
   }
