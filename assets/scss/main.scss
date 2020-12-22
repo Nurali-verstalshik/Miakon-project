@@ -185,7 +185,43 @@ a:hover {
 	position: absolute;
 	bottom: 40px;
 	left: 3.5%;
+	
+	animation: 10s linear 0s normal none infinite running rot;
+	-webkit-animation: 10s linear 0s normal none infinite running rot;
+	width: 100px;
 }
+.round {
+	background-image: url('/assets/img/section.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 50px;
+	height: 28px;
+	position: absolute;
+	top: 20px;
+	z-index: 9;
+	right: 40px;
+}
+#tophalf {
+	color: #73869F;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 header nav {
 	display: flex;
 	flex-direction: row;
@@ -3751,7 +3787,7 @@ button.learn-more .button-text {
 	color: white!important;
 }
 .offer_info button.learn-more .button-text {
-	color: white;
+	color: white!important;
 }
 }
 
