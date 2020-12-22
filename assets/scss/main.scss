@@ -966,7 +966,7 @@ position: relative;
 	padding: 0;
 }
 .filter_tabs ul:not(:last-child) {
-	padding: 20px 30px;
+	padding: 28px 30px;
 	background: #FFFFFF;
 	border-radius: 10px;
 	margin-bottom: 22px;
@@ -1059,7 +1059,7 @@ z-index: 2;
 	color: red;
 	display: block;
 	margin: 0 auto;
-	top: -64px;
+	top: -80px;
 	position: relative;
 	width: 50px;
 	height: 40px;
@@ -1551,6 +1551,7 @@ border-radius: 6px;
 .product_card__header {
 	margin-top: 32px;
 	margin-bottom: 100px;
+	margin-left: 15px;
 span{
 	font-size: 14px;
 	line-height: 180%;
@@ -1677,10 +1678,17 @@ button:focus {
 			color: white;
 		}
 		button:hover .circle .icon.arrow::before {
-			content: "→";
+			content: "";
+			background-image: url("/assets/img/arrow.svg");
+			width: 70px;
+			height: 40px;
+			padding: 20px;
+			transform: rotate(180deg);
 			font-size: 20px;
-			transition: 0.3s;
-			top: -12px;
+			top: -13px;
+			background-repeat: no-repeat;
+			background-position: unset;
+			left: -35px;
 		}
 		button:hover .button-text {
 			left: 15px;
@@ -2131,6 +2139,7 @@ button:hover .button-text {
 display: flex;
 justify-content: center;
 align-items: center;
+color: #009CDB;
 }
 .filters_del span {
 	display: inline-block;
@@ -3390,6 +3399,9 @@ li.cifra_desc {
 
 .similar_products {
 	margin-bottom: 230px; 
+	h2 {
+		max-width: 269px;
+	}
 	.card {
 		max-width: 275px;
 		max-height: auto;

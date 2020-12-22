@@ -914,7 +914,7 @@ section .desc {
 }
 
 .filter_tabs ul:not(:last-child) {
-  padding: 20px 30px;
+  padding: 28px 30px;
   background: #FFFFFF;
   border-radius: 10px;
   margin-bottom: 22px;
@@ -1007,7 +1007,7 @@ section .desc {
   color: red;
   display: block;
   margin: 0 auto;
-  top: -64px;
+  top: -80px;
   position: relative;
   width: 50px;
   height: 40px;
@@ -1413,6 +1413,7 @@ details[open] summary:before {
 .product_card__header {
   margin-top: 32px;
   margin-bottom: 100px;
+  margin-left: 15px;
 }
 .product_card__header span {
   font-size: 14px;
@@ -1541,10 +1542,17 @@ button:focus {
   color: white;
 }
 .product_card__desc__column__special .podrobnee_btn button:hover .circle .icon.arrow::before {
-  content: "→";
+  content: "";
+  background-image: url("/assets/img/arrow.svg");
+  width: 70px;
+  height: 40px;
+  padding: 20px;
+  transform: rotate(180deg);
   font-size: 20px;
-  transition: 0.3s;
-  top: -12px;
+  top: -13px;
+  background-repeat: no-repeat;
+  background-position: unset;
+  left: -35px;
 }
 .product_card__desc__column__special .podrobnee_btn button:hover .button-text {
   left: 15px;
@@ -1913,6 +1921,7 @@ button:hover .button-text {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #009CDB;
 }
 
 .filters_del span {
@@ -3192,6 +3201,9 @@ details {
 
 .similar_products {
   margin-bottom: 230px;
+}
+.similar_products h2 {
+  max-width: 269px;
 }
 .similar_products .card {
   max-width: 275px;
