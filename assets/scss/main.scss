@@ -132,8 +132,8 @@ a:hover {
 }
 
 .offer_info {
-	// padding: 340px 0 360px 0; 
-	height: 1069px;
+	padding: 340px 0 360px 0; 
+	// height: 1069px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -3749,6 +3749,9 @@ button.learn-more .button-text {
 }
 .similar_products button .button-text {
 	color: white!important;
+}
+.offer_info button.learn-more .button-text {
+	color: white;
 }
 }
 

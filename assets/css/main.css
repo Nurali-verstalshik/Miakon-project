@@ -133,7 +133,7 @@ a:hover {
 }
 
 .offer_info {
-  height: 1069px;
+  padding: 340px 0 360px 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -3598,6 +3598,10 @@ details[open] summary {
 
   .similar_products button .button-text {
     color: white !important;
+  }
+
+  .offer_info button.learn-more .button-text {
+    color: white;
   }
 }
 @media (min-width: 767px) and (max-width: 1100px) {
