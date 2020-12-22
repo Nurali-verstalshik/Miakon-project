@@ -3858,7 +3858,52 @@ details {
 	display: grid;
 	grid-template-columns: repeat(2, 115%);
 }
-
+.about_offer_img {
+	margin: 0 auto;
+	margin-top: 90px;
+	height: auto;
+	width: 100%;
+}
+.med_work {
+	margin: 0!important;
+	padding: 0 15px;
+	width: 100%;
+}
+#aboutPage .med_work {
+	padding-left: 5px;
+}
+.commrads {
+    width: 100%;
+}
+#aboutPage .swiper-container {
+	padding-left: 0;
+	margin-right: 0;
+}
+#aboutPage .swiper-button-prev {
+	top: 35px;
+}
+#aboutPage .swiper-button-next {
+	bottom: 15px;
+}
+.commrads {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#aboutPage .med_banks .swiper-container {
+    padding-top: 15px !important;
+    padding-left: 7px !important;
+}
+.preFooter button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0;
+    width: 1.125rem;
+    height: 7px;
+    background: none;
+}
+.preFooter .leaves {
+	display: none;
+}
 }
 
 
