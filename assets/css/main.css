@@ -414,12 +414,14 @@ nav a:last-child {
 #index section:not(:last-child) {
   margin-top: 220px;
   margin-left: 49px;
+  border-radius: 10px;
 }
 #index section:not(:last-child) .card {
   max-width: 300px;
   max-height: 386px;
   padding: 10px;
   margin: 50px 3px;
+  border-radius: 10px;
   background-color: #EFF4F7;
   box-shadow: -5px -5px 10px #fff, 5px 5px 10px #D1D9E6;
 }
@@ -430,6 +432,7 @@ nav a:last-child {
   height: auto;
   display: block;
   margin: 0 auto;
+  border-radius: 10px;
 }
 #index .swiper-container,
 .similar_products .swiper-container {
@@ -485,7 +488,7 @@ nav a:last-child {
   color: #73869F;
   font-size: 14px;
   font-weight: bold;
-  margin-top: -47px;
+  margin-top: -7px;
   margin-left: -40px;
 }
 .left_nav img {
@@ -594,6 +597,7 @@ section .desc {
   display: flex;
   align-items: center;
   color: #73869F;
+  font-family: "Federo";
   text-shadow: -3px -3px 3px #FFFFFF, 3px 3px 3px #AABCD3;
   margin-bottom: 20px;
 }
@@ -697,7 +701,7 @@ section .desc {
   bottom: 0;
   display: block;
   opacity: 0;
-  transition: 1s;
+  transition: 0.1s;
 }
 
 .doc_image {
@@ -717,36 +721,36 @@ section .desc {
 
 .description_title {
   display: block;
-  transition: 1s;
+  transition: 0.2s;
   height: auto;
   overflow: hidden;
   margin-bottom: -50px;
+  width: 100%;
 }
 
 .doc:hover .doc_image:after {
   content: "";
   background: rgba(115, 134, 159, 0.4);
-  transition: 0.2s;
+  transition: 0.5s;
   border-radius: 8px;
-  transition: 1s;
 }
 
 .doc:hover .doc_info {
-  transition: 1s;
+  transition: 0.5s;
   display: block;
   opacity: 1;
 }
 
 .doc:hover .description_title {
   display: block;
-  transition: 1s;
+  transition: 0.3s;
   bottom: 85px;
   background-color: #6D8099;
 }
 
 .description_title {
   display: block;
-  transition: 1s;
+  transition: 0.1s;
   height: auto;
   overflow: hidden;
   position: relative;
@@ -800,7 +804,7 @@ section .desc {
   height: 118px;
 }
 .med_banks .banks img {
-  box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #D1D9E6;
+  box-shadow: -5px -5px 10px #d2d2d2, 5px 5px 10px #D1D9E6;
   border-radius: 5px;
   background-color: #fff;
   display: flex;
@@ -854,7 +858,7 @@ section .desc {
 --------------------------------*/
 #index .med_about {
   margin-top: 120px !important;
-  margin-bottom: 150px;
+  margin-bottom: 230px;
 }
 
 .about_text {
@@ -866,7 +870,7 @@ section .desc {
 }
 
 .about_text .podrobnee_btn {
-  margin-top: 48px;
+  margin-top: 35px;
 }
 .about_text div {
   width: 80%;
@@ -1869,7 +1873,7 @@ button.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
-  left: 30px;
+  left: 36px;
   right: 0;
   bottom: 0;
   padding: 0.75rem 0;
@@ -1895,10 +1899,6 @@ button:hover .circle .icon.arrow {
 
 button:hover .button-text {
   color: #fff;
-}
-
-button:hover .button-text {
-  left: 15px;
 }
 
 .hero {
@@ -2562,6 +2562,10 @@ footer .footer_info {
     font-size: 16px;
   }
 
+  .med_why li::before {
+    content: "";
+  }
+
   .med_why li span {
     font-size: 18px;
   }
@@ -2632,6 +2636,7 @@ footer .footer_info {
     background: white;
     opacity: 0.5;
     margin-left: -25px;
+    border-radius: 10px;
   }
 
   #aboutPage .offer {
@@ -2702,6 +2707,7 @@ footer .footer_info {
     bottom: 0;
     background: white;
     opacity: 0.5;
+    border-radius: 10px;
     margin-left: -25px;
   }
 
@@ -2746,6 +2752,7 @@ footer .footer_info {
   bottom: 0;
   background: white;
   opacity: 0.5;
+  border-radius: 20px;
 }
 
 .mainscreen-video2 {
@@ -2950,6 +2957,7 @@ footer .footer_info {
 
   li.cifra_desc {
     margin-bottom: 50px;
+    font-family: "Federo";
   }
 
   #aboutPage .med_work {
@@ -3177,6 +3185,7 @@ footer .footer_info {
   margin: 50px 3px;
   background-color: #EFF4F7;
   color: #00294C;
+  border-radius: 10px;
   box-shadow: -5px -5px 10px #fff, 5px 5px 10px #D1D9E6;
 }
 .similar_products .card .product_title {
