@@ -3443,6 +3443,9 @@ details[open] summary{
 
 
 @media (min-width: 320px) and (max-width:767px) {
+	.tabs {
+		margin-left: unset;
+	}
 
 	button.learn-more .circle .icon.arrow::before {
 	position: absolute;
