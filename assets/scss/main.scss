@@ -1149,6 +1149,15 @@ z-index: 2;
 		margin-left: -5px;
 	}	
 }
+.ac-small a,
+.not_sub a {
+	color: #212529;
+	padding: 0;
+	margin: 0;
+}
+.ac-small .active {
+	color: #009CDB;
+}
 .filter_tab__subcat input {
     display: inline-block;
 }
@@ -1201,6 +1210,130 @@ z-index: 2;
 	background-color: #009CDB!important;
 }
 
+
+
+
+
+
+summary {
+  &::-webkit-details-marker { display: none; }
+  &::-moz-list-bullet { list-style-type: none; }
+  // display: block; - не всегда уместно
+}
+
+//$img-marker: 'data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=';
+
+details {
+
+  // Косметические улучшения
+  position: relative;
+  margin-bottom: .5rem;
+  min-height: 1rem;
+  max-height: 3rem;
+  transition: min-height .15s linear, max-height .5s linear;
+  -webkit-transition: min-height .15s linear, max-height .15s linear;
+  overflow: hidden;
+  top:-66px;
+  // Заголовок
+  summary {
+
+    // Удаление стандартного маркера
+    &::-webkit-details-marker { display: none; }
+    &::-moz-list-bullet { list-style-type: none; }
+
+    // Ограничение кликабельной области заголовка
+    display: inline-block;
+
+    // Пространство для маркера
+    padding-left: 1.5em;
+
+    // Косметические улучшения
+    cursor: pointer;
+    outline: 0;
+    transition: color .12s;
+    -webkit-transition: color .12s;
+    span { border-bottom: 1px currentColor dotted; }
+    &:hover { color: #d06c6c; }
+
+    // Добавление маркера
+    &::before {
+    // content: "";
+      left: 0;
+      top: .4em;
+      position: absolute;
+    //  background: url($img-marker) no-repeat 50% 50% / 1em 1em;
+      width: 1em;
+      height: 1em;
+      transition: transform .1s linear;
+      -webkit-transition: transform .1s linear;
+    }
+
+    // Контент, стоящий после заголовка
+    & ~ * {
+      padding-left: 1.5em;
+      opacity: 0;
+      transition: opacity .15s linear;
+      -webkit-transition: opacity .15s linear;
+    }
+
+  }
+
+  // Открытый спойлер
+  &[open] {
+    min-height: 2em;
+    max-height: 100%;
+    summary {
+    color: #d06c6c;
+	filter: saturate(5);
+	transition: 1s;
+      & ~ * { 
+        opacity: 1;
+      }
+      &:before { 
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+      }
+
+    }
+
+  }
+
+}
+
+
+
+// Фикс для IE 10-11 & Edge
+@mixin ie_fix() {
+  details {
+    max-height: none;
+    summary {
+
+      & ~ * {
+        max-height: 0;
+        overflow: hidden;
+        position: absolute; // IE испытывает проблемы с обычным max-height: 0;
+      }
+
+      &:focus {
+        color: #d06c6c;
+
+        &::before { 
+          transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+         }
+
+        & ~ * {
+          max-height: 20em;
+          position: static;
+          opacity: 1;
+        }
+
+      }
+
+    }
+  }
+}
 
 
 
@@ -1650,6 +1783,9 @@ span{
     	}
     	li:nth-child(even) {
     		background-color: #EFF4F7;
+    	}
+    	span {
+    		color: #00294C;
     	}
     }
 
@@ -2487,6 +2623,12 @@ footer .footer_info {
 
 
 @media (min-width: 300px) and (max-width: 768px) {
+	.product {
+		margin-top: -30px;
+	}
+	.filter_tabs {
+		margin-top: 20px;
+	}
 	.med_banks {
 		margin-bottom: 100px;
 	}
@@ -3300,6 +3442,12 @@ details[open] summary{
 
 
 @media (min-width: 320px) and (max-width:767px) {
+	.list .product_item img {
+		max-width: 100%;
+	}
+	.list .product_item {
+		align-items: unset;
+	}
 	.product_card,
 	.product_card__images__min,
 	.product_card__images__big,
@@ -3629,128 +3777,4 @@ details[open] summary{
 }
 
 
-
-
-
-
-
-summary {
-  &::-webkit-details-marker { display: none; }
-  &::-moz-list-bullet { list-style-type: none; }
-  // display: block; - не всегда уместно
-}
-
-//$img-marker: 'data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=';
-
-details {
-
-  // Косметические улучшения
-  position: relative;
-  margin-bottom: .5rem;
-  min-height: 1rem;
-  max-height: 3rem;
-  transition: min-height .15s linear, max-height .5s linear;
-  -webkit-transition: min-height .15s linear, max-height .15s linear;
-  overflow: hidden;
-
-  // Заголовок
-  summary {
-
-    // Удаление стандартного маркера
-    &::-webkit-details-marker { display: none; }
-    &::-moz-list-bullet { list-style-type: none; }
-
-    // Ограничение кликабельной области заголовка
-    display: inline-block;
-
-    // Пространство для маркера
-    padding-left: 1.5em;
-
-    // Косметические улучшения
-    cursor: pointer;
-    outline: 0;
-    transition: color .12s;
-    -webkit-transition: color .12s;
-    span { border-bottom: 1px currentColor dotted; }
-    &:hover { color: #d06c6c; }
-
-    // Добавление маркера
-    &::before {
-    // content: "";
-      left: 0;
-      top: .4em;
-      position: absolute;
-    //  background: url($img-marker) no-repeat 50% 50% / 1em 1em;
-      width: 1em;
-      height: 1em;
-      transition: transform .1s linear;
-      -webkit-transition: transform .1s linear;
-    }
-
-    // Контент, стоящий после заголовка
-    & ~ * {
-      padding-left: 1.5em;
-      opacity: 0;
-      transition: opacity .15s linear;
-      -webkit-transition: opacity .15s linear;
-    }
-
-  }
-
-  // Открытый спойлер
-  &[open] {
-    min-height: 2em;
-    max-height: 100%;
-    summary {
-    color: #d06c6c;
-	filter: saturate(5);
-	transition: 1s;
-      & ~ * { 
-        opacity: 1;
-      }
-      &:before { 
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-      }
-
-    }
-
-  }
-
-}
-
-
-
-// Фикс для IE 10-11 & Edge
-@mixin ie_fix() {
-  details {
-    max-height: none;
-    summary {
-
-      & ~ * {
-        max-height: 0;
-        overflow: hidden;
-        position: absolute; // IE испытывает проблемы с обычным max-height: 0;
-      }
-
-      &:focus {
-        color: #d06c6c;
-
-        &::before { 
-          transform: rotate(90deg);
-          -ms-transform: rotate(90deg);
-         }
-
-        & ~ * {
-          max-height: 20em;
-          position: static;
-          opacity: 1;
-        }
-
-      }
-
-    }
-  }
-}
 

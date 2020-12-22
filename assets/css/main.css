@@ -1082,6 +1082,17 @@ section .desc {
   margin-left: -5px;
 }
 
+.ac-small a,
+.not_sub a {
+  color: #212529;
+  padding: 0;
+  margin: 0;
+}
+
+.ac-small .active {
+  color: #009CDB;
+}
+
 .filter_tab__subcat input {
   display: inline-block;
 }
@@ -1130,6 +1141,76 @@ section .desc {
 
 .irs--round .irs-bar {
   background-color: #009CDB !important;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::-moz-list-bullet {
+  list-style-type: none;
+}
+
+details {
+  position: relative;
+  margin-bottom: 0.5rem;
+  min-height: 1rem;
+  max-height: 3rem;
+  transition: min-height 0.15s linear, max-height 0.5s linear;
+  -webkit-transition: min-height 0.15s linear, max-height 0.15s linear;
+  overflow: hidden;
+  top: -66px;
+}
+details summary {
+  display: inline-block;
+  padding-left: 1.5em;
+  cursor: pointer;
+  outline: 0;
+  transition: color 0.12s;
+  -webkit-transition: color 0.12s;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details summary::-moz-list-bullet {
+  list-style-type: none;
+}
+details summary span {
+  border-bottom: 1px currentColor dotted;
+}
+details summary:hover {
+  color: #d06c6c;
+}
+details summary::before {
+  left: 0;
+  top: 0.4em;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  transition: transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+}
+details summary ~ * {
+  padding-left: 1.5em;
+  opacity: 0;
+  transition: opacity 0.15s linear;
+  -webkit-transition: opacity 0.15s linear;
+}
+details[open] {
+  min-height: 2em;
+  max-height: 100%;
+}
+details[open] summary {
+  color: #d06c6c;
+  filter: saturate(5);
+  transition: 1s;
+}
+details[open] summary ~ * {
+  opacity: 1;
+}
+details[open] summary:before {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
 }
 
 /* для элемента input c type="radio" */
@@ -1546,6 +1627,9 @@ section .desc {
 }
 #content-2 ol li:nth-child(even) {
   background-color: #EFF4F7;
+}
+#content-2 ol span {
+  color: #00294C;
 }
 
 .tabs > label {
@@ -2318,6 +2402,14 @@ footer .footer_info {
 		end	footer
 --------------------------------*/
 @media (min-width: 300px) and (max-width: 768px) {
+  .product {
+    margin-top: -30px;
+  }
+
+  .filter_tabs {
+    margin-top: 20px;
+  }
+
   .med_banks {
     margin-bottom: 100px;
   }
@@ -3150,6 +3242,14 @@ details[open] summary {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .list .product_item img {
+    max-width: 100%;
+  }
+
+  .list .product_item {
+    align-items: unset;
+  }
+
   .product_card,
 .product_card__images__min,
 .product_card__images__big,
@@ -3552,72 +3652,4 @@ details[open] summary {
   .product {
     margin-top: 52px;
   }
-}
-summary::-webkit-details-marker {
-  display: none;
-}
-summary::-moz-list-bullet {
-  list-style-type: none;
-}
-
-details {
-  position: relative;
-  margin-bottom: 0.5rem;
-  min-height: 1rem;
-  max-height: 3rem;
-  transition: min-height 0.15s linear, max-height 0.5s linear;
-  -webkit-transition: min-height 0.15s linear, max-height 0.15s linear;
-  overflow: hidden;
-}
-details summary {
-  display: inline-block;
-  padding-left: 1.5em;
-  cursor: pointer;
-  outline: 0;
-  transition: color 0.12s;
-  -webkit-transition: color 0.12s;
-}
-details summary::-webkit-details-marker {
-  display: none;
-}
-details summary::-moz-list-bullet {
-  list-style-type: none;
-}
-details summary span {
-  border-bottom: 1px currentColor dotted;
-}
-details summary:hover {
-  color: #d06c6c;
-}
-details summary::before {
-  left: 0;
-  top: 0.4em;
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  transition: transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-}
-details summary ~ * {
-  padding-left: 1.5em;
-  opacity: 0;
-  transition: opacity 0.15s linear;
-  -webkit-transition: opacity 0.15s linear;
-}
-details[open] {
-  min-height: 2em;
-  max-height: 100%;
-}
-details[open] summary {
-  color: #d06c6c;
-  filter: saturate(5);
-  transition: 1s;
-}
-details[open] summary ~ * {
-  opacity: 1;
-}
-details[open] summary:before {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
 }
