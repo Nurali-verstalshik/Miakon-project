@@ -139,6 +139,7 @@ a:hover {
   font-weight: normal;
   line-height: 100%;
   margin: 0 105px;
+  max-width: 1140px;
 }
 .offer_info p {
   margin: 35px 0 43px 105px;
@@ -1500,6 +1501,11 @@ details[open] summary:before {
 
 .product_card__desc__column span {
   color: #00294C;
+}
+
+.learn-more:focus,
+button:focus {
+  outline: none !important;
 }
 
 .product_card__desc__column__special {
@@ -3247,6 +3253,10 @@ details[open] summary {
     margin-left: unset;
   }
 
+  .product_card__price span {
+    font-size: 20px;
+  }
+
   button.learn-more .circle .icon.arrow::before {
     position: absolute;
     content: "+";
@@ -3519,6 +3529,7 @@ details[open] summary {
 
   button .button-text {
     left: 15px !important;
+    color: #00294C !important;
   }
 
   .pagination {
@@ -3527,6 +3538,16 @@ details[open] summary {
 
   details[open] summary {
     display: block;
+  }
+
+  button.learn-more .button-text {
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+
+  .similar_products button .button-text {
+    color: white !important;
   }
 }
 @media (min-width: 767px) and (max-width: 1100px) {

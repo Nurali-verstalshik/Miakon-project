@@ -136,6 +136,7 @@ a:hover {
 		font-weight: normal;
 		line-height: 100%;
 		margin: 0 105px;
+		max-width: 1140px;
 	}
 	p{
 		margin: 35px 0 43px 105px;
@@ -1638,6 +1639,10 @@ span{
 }
 .product_card__desc__column span {
 	color: #00294C;
+}
+.learn-more:focus,
+button:focus {
+	outline: none!important;
 }
 .product_card__desc__column__special {
 	background: #73869F; border-radius: 10px;
@@ -3446,6 +3451,9 @@ details[open] summary{
 	.tabs {
 		margin-left: unset;
 	}
+	.product_card__price span {
+	font-size: 20px;
+}
 
 	button.learn-more .circle .icon.arrow::before {
 	position: absolute;
@@ -3669,12 +3677,21 @@ button .circle .icon.arrow {
 }
 button .button-text {
     left: 15px!important;
+    color:#00294C!important;
 }
 .pagination {
 	padding: 0;
 }
 details[open] summary{
 	display: block;
+}
+button.learn-more .button-text {
+	display: block;
+	margin: 0;
+	text-align: center;
+}
+.similar_products button .button-text {
+	color: white!important;
 }
 }
 
@@ -3790,6 +3807,7 @@ details[open] summary{
 .product {
 	margin-top: 52px;
 }
+
 }
 
 
