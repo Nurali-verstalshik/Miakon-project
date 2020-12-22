@@ -3269,8 +3269,14 @@ li.cifra_desc {
 			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0.1%, #FFFFFF 12.75%, #FFFFFF 87.28%, rgba(255, 255, 255, 0) 75%);
 			border-radius: 50px;
 			background: linear-gradient(90deg, rgb(255, 255, 255) 40%, rgba(255,255,255,0) 100%);
+			animation: background 3s infinite alternate;
 		}
-
+		
+@keyframes background {
+  50% {
+ background: linear-gradient(90deg, white 100%, rgba(255, 255, 255, 0) 40%)
+  }
+}
 details[open] summary{
 	display: none;
 }
