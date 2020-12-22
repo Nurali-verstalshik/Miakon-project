@@ -3398,7 +3398,7 @@ details[open] summary {
     display: block;
   }
 }
-@media (min-width: 767px) and (max-width: 1is00px) {
+@media (min-width: 767px) and (max-width: 1100px) {
   .breadthums {
     top: 190px;
   }
