@@ -189,8 +189,9 @@ a:hover {
   right: 40px;
 }
 
-#tophalf {
+textPath {
   color: #73869F;
+  font-family: "Federo";
 }
 
 @keyframes rot {
@@ -3627,8 +3628,36 @@ details[open] summary {
     color: white !important;
   }
 
-  .offer_info button.learn-more .button-text {
+  .offer_info button.learn-more .button-text,
+.med_rashodniki button.learn-more .button-text,
+.about_text button.learn-more .button-text {
     color: white !important;
+  }
+
+  .offer_info {
+    width: 80%;
+  }
+
+  #index section:not(:last-child) {
+    margin-left: 0;
+  }
+
+  #index .btn_wrapper {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #index .swiper-container {
+    margin-left: 0;
+  }
+
+  #index section .card {
+    max-width: 100% !important;
+  }
+
+  .wrapper2 {
+    margin-left: 0;
   }
 }
 @media (min-width: 767px) and (max-width: 1100px) {
