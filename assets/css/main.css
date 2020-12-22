@@ -890,7 +890,7 @@ section .desc {
   font-size: 50px;
   line-height: 120%;
   color: #00294C;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .show::before {
@@ -1931,9 +1931,11 @@ button:hover .button-text {
   align-content: center;
   margin: 0px -40px;
   padding: 30px 0;
+  padding-right: 35px;
 }
 .product_filter_view span {
   margin-right: 40px;
+  color: #73869F;
 }
 .product_filter_view img {
   filter: grayscale(100%);
@@ -1951,6 +1953,7 @@ button:hover .button-text {
 .product {
   display: grid;
   grid-row-gap: 30px;
+  padding-right: 75px;
 }
 .product .product_item {
   background: #EFF4F7;
@@ -2415,6 +2418,10 @@ footer .footer_info {
   padding: 0 3%;
 }
 
+details {
+  top: unset;
+}
+
 /*-------------------------------
 		end	footer
 --------------------------------*/
@@ -2654,6 +2661,10 @@ footer .footer_info {
   }
 }
 @media (min-width: 768px) and (max-width: 1100px) {
+  details {
+    top: unset;
+  }
+
   .header {
     display: none;
   }
