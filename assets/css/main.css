@@ -1550,6 +1550,7 @@ details[open] summary:before {
 }
 
 .learn-more:focus,
+a:focus,
 button:focus {
   outline: none !important;
 }
@@ -3653,11 +3654,63 @@ details[open] summary {
   }
 
   #index section .card {
-    max-width: 100% !important;
+    max-width: 98% !important;
   }
 
   .wrapper2 {
     margin-left: 0;
+  }
+
+  .product_filter_view {
+    padding-right: 0;
+  }
+
+  .product {
+    padding-right: 15px;
+  }
+  .product button.learn-more .button-text {
+    color: white !important;
+  }
+
+  .filter_tabs ul:not(:last-child) {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .product .product_button {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .product_filter_view {
+    margin: 0;
+    padding-right: 15px;
+  }
+
+  .product_filter_view span {
+    margin-right: unset;
+  }
+
+  details[open] {
+    top: -65px;
+  }
+
+  details {
+    top: -65px !important;
+  }
+
+  .product_card,
+.product_tabs {
+    padding: 0 5px;
+  }
+
+  .similar_products button.learn-more .circle .icon.arrow::before {
+    right: 5px;
+  }
+
+  .product_card__desc ul li {
+    display: grid;
+    grid-template-columns: repeat(2, 115%);
   }
 }
 @media (min-width: 767px) and (max-width: 1100px) {
