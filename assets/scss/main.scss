@@ -1712,12 +1712,13 @@ span{
 --------------------------------*/
 
     .tabs {
-    	width: 80%;
+    	width: 100%;
     	margin-left: auto;
     	margin-right: auto;
     	position: relative;
     	z-index: 20;
     	margin-bottom: 150px;
+    	margin-left: 30px;
     }
 
     .tabs>input[type="radio"] {
@@ -3453,7 +3454,7 @@ details[open] summary{
 	color: white;
 	font-size: 30px;
 }
-	
+
 	.list .product_item img {
 		max-width: 100%;
 	}

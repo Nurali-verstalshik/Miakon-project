@@ -1569,12 +1569,13 @@ details[open] summary:before {
 			  табы
 --------------------------------*/
 .tabs {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   z-index: 20;
   margin-bottom: 150px;
+  margin-left: 30px;
 }
 
 .tabs > input[type=radio] {
