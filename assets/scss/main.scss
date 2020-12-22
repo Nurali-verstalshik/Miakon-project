@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 body {
 	font-weight: 400;
 	font-size: 1rem;
 	background-color: #EFF4F7;
+	overflow-x: hidden;
 }
 h1 {
 	font-family: 'Federo';
@@ -76,8 +79,8 @@ a:hover {
 	right: 0;
 	bottom: 0;
 	z-index: 0;
-	opacity: 0.2;
-	background-color: red;
+	opacity: 0.3;
+	background-color: #EFF4F7;
 	width: 100%;
 	height: auto;
 	display: block;
@@ -129,7 +132,7 @@ a:hover {
 }
 
 .offer_info {
-	margin: 244px 0 361px 0; 
+	margin: 340px 0 360px 0; 
 	h1{
 		font-size: 72px;
 		color: #009CDB;
@@ -142,6 +145,8 @@ a:hover {
 		margin: 35px 0 43px 105px;
 		font-size: 18px;
 		line-height: 150%;
+		color:#73869F;
+		font-family: "Noto Sans", sans-serif;
 	}
 	a {
 		margin: 0 105px;
@@ -332,6 +337,7 @@ nav a:last-child {
 .switcher {
 	display: inline-flex;
 	vertical-align: sub;
+	font-family: 'Noto Sans', sans-serif;
 	.lang {
 		margin: 0 10px;
 	}
@@ -1518,6 +1524,7 @@ border-radius: 6px;
 .product_card {
 	margin-top: 288px;
 	margin-bottom: 150px;
+	padding: 0 75px;
 	h2{
 		font-size: 20px;
 		color: white;
@@ -1527,6 +1534,9 @@ border-radius: 6px;
 		border: 0px solid red;
 	}
 
+}
+.product_tabs {
+    padding: 0 75px;
 }
 .product_card__title h1{
 	font-size: 50px;
@@ -1717,13 +1727,13 @@ button:focus {
 --------------------------------*/
 
     .tabs {
-    	width: 100%;
+    	width: 97%;
     	margin-left: auto;
     	margin-right: auto;
     	position: relative;
     	z-index: 20;
     	margin-bottom: 150px;
-    	margin-left: 30px;
+    	margin-left: 45px;
     }
 
     .tabs>input[type="radio"] {
@@ -1906,7 +1916,7 @@ button:focus {
 	border-radius: 10px;
 	margin-left: 0 !important;
 	margin: 0 75px!important;
-	padding: 50px 150px;
+	padding: 30px 150px;
 	position: relative;
 	margin-bottom: 230px!important;
 	h3 {
@@ -1929,7 +1939,7 @@ button:focus {
 		position: absolute;
 		top: 0;
 		right: 0;
-		background-position: center;
+		background-position: right;
 		z-index: 2;
 	}
 	.btn-center {
@@ -3423,16 +3433,17 @@ li.cifra_desc {
 		.left_nav::before {
 			content: "";
 			position: absolute;
-			width: 300%;
+			width: 280%;
 			height: 2px; 
 			top: -10px;
 			right: 0; 
-			opacity: 0.5;
+			// opacity: 1.0;
 			transition: 1s;
-			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0.1%, #FFFFFF 12.75%, #FFFFFF 87.28%, rgba(255, 255, 255, 0) 75%);
+			// background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0.1%, #FFFFFF 12.75%, #FFFFFF 87.28%, rgba(255, 255, 255, 0) 75%);
 			border-radius: 50px;
-			background: linear-gradient(90deg, rgb(255, 255, 255) 40%, rgba(255,255,255,0) 100%);
-			animation: background 7s infinite alternate;
+			// background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%);
+			 
 		}
 
 @keyframes background {
@@ -3445,6 +3456,10 @@ details[open] summary{
 	display: none;
 }
 
+
+.preFooter button.learn-more .circle {
+	box-shadow: 5px 5px 5px #677992, -5px -5px 5px #93A6BF;
+}
 
 
 @media (min-width: 320px) and (max-width:767px) {
