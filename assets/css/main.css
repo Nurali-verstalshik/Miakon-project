@@ -3128,6 +3128,7 @@ footer .footer_info {
   opacity: 0.5;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0.1%, #FFFFFF 12.75%, #FFFFFF 87.28%, rgba(255, 255, 255, 0) 75%);
   border-radius: 50px;
+  background: linear-gradient(90deg, white 40%, rgba(255, 255, 255, 0) 100%);
 }
 
 details[open] summary {
