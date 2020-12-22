@@ -133,7 +133,10 @@ a:hover {
 }
 
 .offer_info {
-  margin: 340px 0 360px 0;
+  height: 1069px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .offer_info h1 {
   font-size: 72px;
