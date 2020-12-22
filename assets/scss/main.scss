@@ -1154,7 +1154,7 @@ z-index: 2;
 }
  
 .ac-container input:checked ~ article.ac-small{
-	height: 80px; 
+	height: 120px; 
 }
 .ac-small {
 	.filter_tab__subcat {
@@ -2614,7 +2614,9 @@ box-shadow: 3px 3px 4px #D1D9E6, -3px -3px 10px #FFFFFF;
   	border: none;
   }
 }
-
+.ac-small .filter_tab__subcat li {
+	padding: 5px 0;
+}
 
 /*-------------------------------
 			footer

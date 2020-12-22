@@ -1085,7 +1085,7 @@ section .desc {
 }
 
 .ac-container input:checked ~ article.ac-small {
-  height: 80px;
+  height: 120px;
 }
 
 .ac-small .filter_tab__subcat {
@@ -2393,6 +2393,10 @@ div.menu__brand {
     border: none;
   }
 }
+.ac-small .filter_tab__subcat li {
+  padding: 5px 0;
+}
+
 /*-------------------------------
 			footer
 --------------------------------*/
