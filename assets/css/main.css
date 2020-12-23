@@ -1815,6 +1815,9 @@ button:focus {
   border-radius: 10px;
   max-width: 510px;
   padding: 60px 50px;
+  max-height: 650px;
+  position: sticky;
+  top: 0;
 }
 
 .form_review {
