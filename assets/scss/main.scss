@@ -583,10 +583,13 @@ section h2{
 	font-weight: normal;
 	font-size: 50px;
 	color: #00294C;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 section .desc {
-	margin-bottom: 35px;
+	margin-bottom: 25px;
+	font-size: 16px;
+line-height: 150%;
+color: #73869F;
 } 
 /*-------------------------------
 	end Навигация вертикальная
@@ -959,6 +962,7 @@ position: relative;
 	font-size: 16px;
 	line-height: 150%;
 	color: #73869F;
+
 }
 .about_text {
 	.podrobnee_btn {
@@ -966,6 +970,9 @@ position: relative;
 	}
 	div {
 		width: 80%;
+	}
+	p{
+		margin-left: 5px;
 	}
 }
 
@@ -2414,6 +2421,133 @@ button:hover .button-text {
 	// left: 15px;
 }
 
+
+
+
+
+
+
+
+
+
+
+.Button_page {
+	display: inline-flex;
+}
+
+.more-button-wrap {
+	/* display: inline-flex; */
+	align-items: center;
+	justify-content: center;
+	/* display: inline-block; */
+	position: relative;
+	min-height: 48px;
+	padding-left: 67px;
+	margin: 0px 0;
+	z-index: 12;
+}
+.more-button-background {
+	position: absolute;
+	left: 4px;
+	top: 4px;
+	display: inline-block;
+	background: #009CDB;
+	box-shadow: 5px 5px 5px #BED9EA, -5px -5px 5px #FFFFFF;
+	width: 41px;
+	height: 41px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-transition: width 0.3s ease;
+	-o-transition: width 0.3s ease;
+	transition: width 0.3s ease;
+	z-index: 12;
+}
+.more-button-ico {
+	position: absolute;
+	left: 9px;
+	top: -3px;
+	display: inline-block;
+	width: 24px;
+	height: 1px;
+	background-color: #fff;
+	margin-top: 23px;
+	z-index: 12;
+	transform: scale(0.7);
+}
+.more-button-ico::before, .more-button-ico::after {
+	display: inline-block;
+	content: "";
+	position: absolute;
+	background-color: #fff;
+	width: 1px;
+	height: 12px;
+	left: 11px;
+	-webkit-transition: -webkit-transform 0.2s ease;
+	transition: -webkit-transform 0.2s ease;
+	-o-transition: transform 0.2s ease;
+	transition: transform 0.2s ease;
+	transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+	z-index: 12;
+}
+.more-button-ico::before {
+	top: -11px;
+}
+.more-button-ico::before, .more-button-ico::after {
+	display: inline-block;
+	content: "";
+	position: absolute;
+	background-color: #fff;
+	width: 1px;
+	height: 12px;
+	left: 11px;
+	-webkit-transition: -webkit-transform 0.2s ease;
+	transition: -webkit-transform 0.2s ease;
+	-o-transition: transform 0.2s ease;
+	transition: transform 0.2s ease;
+	transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+	z-index: 12;
+}
+.more-button-ico::after {
+	top: 1px;
+}
+.more-button-title {
+	position: relative;
+	z-index: 1;
+	color: #009CDB;
+	/* top: 11px; */
+	-webkit-transition: color 0.3s linear;
+	-o-transition: color 0.3s linear;
+	transition: color 0.3s linear;
+	letter-spacing: -0.3px;
+	z-index: 12;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	display: flex;
+	height: 100%;
+	font-size: 15px;
+	margin-left: -7px;
+}
+
+.more-button-wrap:hover .more-button-background {
+    width: 112%;
+}
+
+.more-button-wrap:hover .more-button-title {
+	color: #fff;
+}
+.more-button-wrap:hover .more-button-ico::before {
+    -webkit-transform: rotate(-52deg) translate(2px, 7px);
+    -ms-transform: rotate(-52deg) translate(2px, 7px);
+    transform: rotate(-52deg) translate(2px, 7px);
+}
+.more-button-wrap:hover .more-button-ico::after {
+    -webkit-transform: rotate(52deg) translate(2px, -6px);
+    -ms-transform: rotate(52deg) translate(2px, -6px);
+    transform: rotate(52deg) translate(2px, -6px);
+}
 
 // //кнопка
 
