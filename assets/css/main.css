@@ -176,6 +176,11 @@ a:hover {
   -webkit-animation: 10s linear 0s normal none infinite running rot;
   width: 100px;
 }
+.rounded img {
+  position: absolute;
+  bottom: 27px;
+  left: 30px;
+}
 
 .round {
   background-image: url("/assets/img/section.png");

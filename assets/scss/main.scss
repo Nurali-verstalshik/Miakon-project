@@ -185,10 +185,14 @@ a:hover {
 	position: absolute;
 	bottom: 40px;
 	left: 3.5%;
-	
 	animation: 10s linear 0s normal none infinite running rot;
 	-webkit-animation: 10s linear 0s normal none infinite running rot;
 	width: 100px;
+	img {
+	position: absolute;
+	bottom: 27px;
+	left: 30px;
+	}
 }
 .round {
 	background-image: url('/assets/img/section.png');

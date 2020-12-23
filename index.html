@@ -70,7 +70,7 @@
 <header class="offer">
     <div class="wrapper">
         <video class="mainscreen-video" autoplay="" muted="" loop=""> 
-            <source src="assets/video/vid.mp4" type="video/mp4">
+            <source src="/assets/video/vid.mp4" type="video/mp4">
         </video>
     </div>
 
@@ -134,15 +134,19 @@
 
     </div>
 
+  </div> 
+
+ 
+  <div class="rounded">  
+    <script src="assets/js/circletype.min.js"></script>
+    <style>#curved1 {word-spacing: 10px;}</style>
+    <img src="assets/img/section.png" alt="">
+    <div id="curved1">&nbsp; листайте  вниз .&nbsp;</div>
+    <script>
+      const circleType = new CircleType(document.getElementById('curved1'));
+    </script>
   </div>
-    <div class="rounded">
-    <div class="round"></div>
-    <svg viewBox="0 0 100 70" width="100px">
-  <path d="M35,35m-23,0a23,23 0 1,1 46,0a23,23 0 1,1 -46,0" fill="none" id="tophalf"/>
-  <text style="font: initial;">
-    <textPath xlink:href="#tophalf" startOffset="0%"> Листайте вниз</textPath>
-  </text>
-</svg></div>
+
 
 </div>
 
