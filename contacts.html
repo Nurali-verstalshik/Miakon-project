@@ -28,6 +28,8 @@
 </head>
 <body id="contacts">
 
+
+
 <!-- mobileMenu -->
 <header class="header">
   <div class="mlogo"><img src="assets/img/mobile_logo.png" alt=""></div>
@@ -117,6 +119,9 @@
 </div>
 <!-- //fix меню --> 
 </header>
+
+
+
 <!-- section о компании -->
 <section class="med_contacts">
   <div class="container-fluid">
@@ -158,7 +163,42 @@
 </div>
 </section>
 <!--// section о компании-->
+
+
+<div class="modal js-modal" data-modal="modal">
+<span class="close_button js-modal-close"></span>
+
+ <div class="form_review__callback">
+   <div class="form_review__title">
+    <h3>Заголовок точки захвата в две строки</h3>
+    <p>Заполните форму ниже, мы перезвоним в ближайшее время</p>
+  </div>
+  <div class="form_review__body">
+    <input type="text" placeholder="Введите имя">
+    <input type="text" placeholder="+7 (___)___-__-__">
+    <input type="text" placeholder="E-mail">
+    <textarea name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+  </div>
+  <div class="form_review__footer">
+    <a class="podrobnee_btn" href="#">
+
+      <div class="btn_wrapper">
+        <button class="learn-more">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">Отправить</span>
+        </button>
+      </div>
+    </a>
+  </div>
+</div>
+
+</div>
+<div class="overlay js-modal-overlay"></div>
   
+
+
 <section class="preFooter" >
 
   <div class="container-fluid">
@@ -167,32 +207,25 @@
         <h3>Заголовок точки захвата по поводу сотрудничества</h3>  
       </div>
       <div class="col-lg-4 col-sm-12 btn-center">
-                <a class="podrobnee_btn" href="#">
-                  <div class="btn_wrapper">
-                    <button class="learn-more">
-                      <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                      </span>
-                      <span class="button-text">Стать портнером</span>
-                    </button>
-                  </div>
-                </a>
-      </div>
+
+        <a class="js-open-modal" data-modal="modal"><div class="podrobnee_btn btn_wrapper">
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text ">Стать партнером </span> 
+          </button>
+        </div>
+      </a>
+
     </div>
   </div>
- <div class="leaves"></div>
+</div>
+<div class="leaves"></div>
 </section>
  
- <a href="#openModal">Открыть модальное окно</a>
 
-<div id="openModal" class="modalDialog">
-  <div>
-    <a href="#close" title="Закрыть" class="close">X</a>
-    <h2>Модальное окно</h2>
-    <p>Пример простого модального окна, которое может быть создано с использованием CSS3.</p>
-    <p>Его можно использовать в широком диапазоне, начиная от вывода сообщений и заканчивая формой регистрации.</p>
-  </div>
-</div>
+
 
 
 
