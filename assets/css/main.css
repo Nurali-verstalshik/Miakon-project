@@ -356,6 +356,7 @@ nav a:last-child {
 }
 .switcher .lang {
   margin: 0 10px;
+  cursor: pointer;
 }
 
 .toggle {
@@ -1642,37 +1643,33 @@ button:focus {
 .product_card__desc__column__special {
   background: #73869F;
   border-radius: 10px;
-  min-width: 420px;
-  float: right;
+  max-width: 420px;
   padding: 27px 50px;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  float: right;
 }
-.product_card__desc__column__special .podrobnee_btn button.learn-more .circle {
-  background-color: #fff;
+.product_card__desc__column__special .more-button-background {
+  background: white;
   box-shadow: 5px 5px 5px #677992, -5px -5px 5px #93A6BF;
-  border-radius: 50px;
 }
-.product_card__desc__column__special .podrobnee_btn button.learn-more .circle .icon.arrow::before {
-  color: #73869F;
+.product_card__desc__column__special .more-button-ico::before, .product_card__desc__column__special .more-button-ico::after,
+.product_card__desc__column__special .more-button-ico {
+  background-color: #73869F;
 }
-.product_card__desc__column__special .podrobnee_btn .button-text {
+.product_card__desc__column__special .more-button-title {
   color: white;
 }
-.product_card__desc__column__special .podrobnee_btn button:hover .circle .icon.arrow::before {
-  content: "";
-  background-image: url("/assets/img/arrow.svg");
-  width: 70px;
-  height: 40px;
-  padding: 20px;
-  transform: rotate(180deg);
-  font-size: 20px;
-  top: -13px;
-  background-repeat: no-repeat;
-  background-position: unset;
-  left: -35px;
+.product_card__desc__column__special .more-button-wrap:hover .more-button-title {
+  color: #00294C;
 }
-.product_card__desc__column__special .podrobnee_btn button:hover .button-text {
-  left: 15px;
-  color: #73869F !important;
+.product_card__desc__column__special .Button_page {
+  height: 100%;
+}
+.product_card__desc__column__special .Button_page {
+  position: relative;
+  z-index: 6;
 }
 
 .product_card__price span {
@@ -3357,6 +3354,7 @@ details {
     top: unset;
     left: unset;
     right: -112px;
+    border-radius: 10px;
     background-image: url(/assets/img/Group_375.png);
   }
 
@@ -4278,5 +4276,17 @@ details[open] summary {
 
   .product {
     margin-top: 52px;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1400px) {
+  .product_card__desc__column__special {
+    width: 100%;
+    max-width: 100%;
+    margin: 15px 0;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1668px) {
+  .product_card__desc__column__special {
+    width: unset;
   }
 }

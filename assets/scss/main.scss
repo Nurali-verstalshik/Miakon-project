@@ -385,6 +385,7 @@ nav a:last-child {
 	font-family: 'Noto Sans', sans-serif;
 	.lang {
 		margin: 0 10px;
+		cursor: pointer;
 	}
 }
 
@@ -1792,38 +1793,33 @@ button:focus {
 }
 .product_card__desc__column__special {
 	background: #73869F; border-radius: 10px;
-	min-width: 420px;
-	float: right;
+	max-width: 420px;
+	 
 	padding: 27px 50px;
-	.podrobnee_btn{
-		button.learn-more .circle {
-			background-color: #fff;
-			box-shadow: 5px 5px 5px #677992, -5px -5px 5px #93A6BF;
-			border-radius: 50px;
-		}
-		button.learn-more .circle .icon.arrow::before { 
-			color: #73869F;
-		}
-		.button-text{
-			color: white;
-		}
-		button:hover .circle .icon.arrow::before {
-			content: "";
-			background-image: url("/assets/img/arrow.svg");
-			width: 70px;
-			height: 40px;
-			padding: 20px;
-			transform: rotate(180deg);
-			font-size: 20px;
-			top: -13px;
-			background-repeat: no-repeat;
-			background-position: unset;
-			left: -35px;
-		}
-		button:hover .button-text {
-			left: 15px;
-			color: #73869F !important;
-		}
+	display: inline-flex;
+	flex-direction: column;
+	width: 100%;
+	float: right;
+		.more-button-background {
+		background: white;
+		box-shadow: 5px 5px 5px #677992, -5px -5px 5px #93A6BF;
+	}
+	.more-button-ico::before, .more-button-ico::after,
+	.more-button-ico { 
+		background-color: #73869F;
+	}
+	.more-button-title {
+		color: white;
+	}
+	.more-button-wrap:hover .more-button-title {
+		color: #00294C;
+	}
+	.Button_page {
+		height: 100%;
+	} 
+	 .Button_page { 
+		position: relative;
+		z-index: 6;
 	}
 }
 .product_card__price span{
@@ -3673,6 +3669,7 @@ details {
 		top: unset;
 		left: unset;
 		right: -112px;
+		border-radius: 10px;
 		background-image: url(/assets/img/Group_375.png);
 	}
 	#contacts .offer {
@@ -4497,5 +4494,16 @@ details[open] summary{
 
 }
 
+@media (min-width:1100px ) and (max-width:1400px ) {
+	.product_card__desc__column__special {
+		width: 100%;
+		max-width: 100%;
+		margin: 15px 0;
+	}
+}
 
-
+@media (min-width:1400px ) and (max-width:1668px ) {
+	.product_card__desc__column__special {
+		width: unset;
+	}
+}
