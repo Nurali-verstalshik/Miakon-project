@@ -2363,6 +2363,7 @@ button:hover .button-text {
 }
 .list .product_item .product_button {
   margin-top: 0px;
+  margin-right: 30px;
 }
 
 .product button:hover .button-text {
