@@ -1790,6 +1790,10 @@ button:focus {
   border: 9px solid #EFF4F9;
 }
 
+.item__info {
+  max-width: 850px;
+}
+
 .item ol {
   padding: 0;
 }
