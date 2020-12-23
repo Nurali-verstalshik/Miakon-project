@@ -992,7 +992,7 @@ section .desc {
   height: 15px;
   position: absolute;
   right: 50px;
-  bottom: 40px;
+  bottom: 33px;
 }
 
 .filter_tabs h3 {
@@ -1000,6 +1000,7 @@ section .desc {
   font-size: 18px;
   line-height: 150%;
   color: #73869F;
+  margin-top: -10px;
 }
 
 .filter_tab__cat {
@@ -1029,23 +1030,17 @@ section .desc {
   list-style: none;
 }
 
+.hide .ac-container {
+  display: none;
+}
+
+.hide .filter_tab__subcat {
+  display: none;
+}
+
 .show {
   position: relative;
   z-index: 2;
-}
-
-.show::after {
-  content: "";
-  width: 47px;
-  height: 47px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: -45px;
-  margin-top: 15px;
-  background: #EFF4F7;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 100%;
 }
 
 .show::before {
@@ -1054,13 +1049,15 @@ section .desc {
   color: red;
   display: block;
   margin: 0 auto;
-  top: -64px;
+  bottom: 64px;
   position: relative;
   width: 50px;
   height: 40px;
   border-radius: 100%;
   background-image: url("/assets/img/show.png");
   z-index: -1;
+  cursor: pointer;
+  top: unset;
 }
 
 .ac-container {
