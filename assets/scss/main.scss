@@ -803,6 +803,12 @@ color: #73869F;
 	}
 
 }
+
+.docs {
+	.swiper-button-next {
+		bottom: 208px !important;
+	}
+}
 .doc_image {
 	width: 100%; 
 	position: relative;
@@ -822,7 +828,7 @@ color: #73869F;
 	height: auto;
 	overflow: hidden;
 	margin-bottom: -50px;
-	width: 105%;
+	width: 100%;
 }
 
 .doc:hover .doc_image:after {
@@ -931,13 +937,13 @@ position: relative;
 	transform: rotate(180deg);
 	right: unset;
 	left: 90px;
-	bottom:0px;
+	bottom:200px ;
 }
 #aboutPage .swiper-button-prev {
 	transform: rotate(0deg);
 	right: unset;
 	left: 20px;
-	top: 41px;
+	top: 42px;
 	position: relative;
 }
 #aboutPage .med_banks .swiper-container {
@@ -996,7 +1002,7 @@ position: relative;
 		}
 	}
 }
-
+ 
 
 .show::before {
 	content: ""; 
@@ -1018,7 +1024,7 @@ position: relative;
 	padding: 0;
 }
 .filter_tabs ul:not(:last-child) {
-	padding: 28px 30px;
+	padding: 20px 30px;
 	background: #FFFFFF;
 	border-radius: 10px;
 	margin-bottom: 22px;
@@ -1046,7 +1052,7 @@ position: relative;
 	height: 15px;
 	position: absolute;
 	right: 50px;
-	bottom: 32px;
+	bottom: 40px;
 }
 .filter_tabs h3 {
 	font-weight: normal;
@@ -1273,8 +1279,6 @@ z-index: 2;
 .irs--round .irs-bar {
 	background-color: #009CDB!important;
 }
-
-
 
 
 
@@ -2259,9 +2263,11 @@ button:focus {
 	} 
 	a {
 		color: white;
-		padding:50px 0;
+		// padding:50px 0;
 		display: block;
 	}
+
+
 	.leaves {
 		background-image: url("/assets/img/Group375.png");
 		width: 100%;
@@ -2278,18 +2284,30 @@ button:focus {
 		justify-content: flex-start;
 		align-items: center;
 	}
-}
-.preFooter button.learn-more .circle {
-	background-color: white;
-}
-.preFooter {
-		button.learn-more .button-text {
-		color: white
+	.more-button-background {
+		background: white;
+		box-shadow: 5px 5px 5px #677992, -5px -5px 5px #93A6BF;
 	}
-	button:hover .button-text {
-		color: #000;
+	.more-button-ico::before, .more-button-ico::after,
+	.more-button-ico { 
+		background-color: #73869F;
+	}
+	.more-button-title {
+		color: white;
+	}
+	.more-button-wrap:hover .more-button-title {
+		color: #00294C;
+	}
+	.Button_page {
+		height: 100%;
+	} 
+	 .Button_page {
+		padding: 40px 0;
+		position: relative;
+		z-index: 6;
 	}
 }
+
 .preFooter button.learn-more .circle .icon.arrow::before {
     position: absolute;
     content: "+";
@@ -2307,6 +2325,16 @@ button:focus {
     z-index: 6;
 }
 
+.js-open-modal {
+	width: 100%;
+	height: 100%; 
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 9; 
+	cursor: pointer; 
+}
 // //prefooter
 
 
@@ -2671,6 +2699,7 @@ color: #009CDB;
     grid-template-columns: repeat(1, auto);
     grid-column-gap: 0px;
     height: max-content;
+    margin-top: 5px;
 
 	.product_item{
 		display: flex;
@@ -3817,7 +3846,7 @@ details {
 		background-position: center;
 	}
 	.swiper-banks .swiper-button-next { 
-		bottom: 0px!important;
+		bottom: 200px!important;
  
 	}
 
@@ -3835,14 +3864,14 @@ details {
     transform: rotate(180deg);
     right: unset;
     left: 90px;
-    bottom: 9px;
+    bottom: 209px;
 }
 
 }
 
 #aboutPage .swiper-container {
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 250px;
 	padding-left: 20px;
 	margin-right: -55px;
 }
