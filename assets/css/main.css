@@ -1446,7 +1446,7 @@ details[open] summary:before {
   padding: 50px 40px;
   z-index: 9999;
   background-color: #fff;
-  display: none;
+  display: block;
   border-radius: 10px;
   background: #73869F;
 }

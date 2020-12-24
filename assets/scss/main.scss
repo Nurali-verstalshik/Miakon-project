@@ -1609,7 +1609,7 @@ border-radius: 6px;
    padding: 50px 40px; 
    z-index: 9999;
    background-color: #fff;
-   display: none;
+   display: block;
    border-radius: 10px;
    background: #73869F;
 }
@@ -4806,7 +4806,9 @@ bottom:207px;
 #aboutPage section {
 	margin-left: 0;
 }
+.med_why {
 
+}
 
 }
 
