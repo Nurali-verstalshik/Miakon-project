@@ -1704,6 +1704,10 @@ button:focus {
   opacity: 0;
 }
 
+.contact_info a {
+  color: #00294C !important;
+}
+
 /*-------------------------------
 	//	карточка товара
 --------------------------------*/
@@ -2332,6 +2336,10 @@ button:hover .button-text {
 .product .product_title {
   margin-top: 20px;
 }
+.product .product_title a {
+  color: #00294C;
+  text-decoration: none;
+}
 .product .product_size {
   margin-top: 20px;
 }
@@ -2362,7 +2370,6 @@ button:hover .button-text {
   grid-column-gap: 0px;
   height: -webkit-max-content;
   height: max-content;
-  margin-top: 5px;
 }
 .list .product_item {
   display: flex;
@@ -3368,10 +3375,6 @@ details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     font-size: 14px;
-  }
-
-  .contact_info a {
-    color: #00294C;
   }
 
   .med_contacts .contact_info li {

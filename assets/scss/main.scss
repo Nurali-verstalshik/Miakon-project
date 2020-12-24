@@ -1869,6 +1869,10 @@ button:focus {
 .mfp-with-zoom.mfp-removing.mfp-bg {
 	opacity: 0;
 }
+
+.contact_info  a {
+	color: #00294C!important;
+}
 /*-------------------------------
 	//	карточка товара
 --------------------------------*/
@@ -2680,6 +2684,10 @@ color: #009CDB;
 	}
 	.product_title {
 		margin-top: 20px;	
+		a {
+			color: #00294C;
+			text-decoration: none;
+		}
 	}
 	.product_size {
 		margin-top: 20px;
@@ -2708,7 +2716,7 @@ color: #009CDB;
     grid-template-columns: repeat(1, auto);
     grid-column-gap: 0px;
     height: max-content;
-    margin-top: 5px;
+    // margin-top: 5px;
 
 	.product_item{
 		display: flex;
@@ -3699,9 +3707,7 @@ details {
 		grid-template-columns: repeat(2, 1fr);
 		font-size: 14px;
 	}
-	.contact_info a {
-		color: #00294C;
-	}
+
 	.med_contacts .contact_info li {
 		margin-bottom: 30px;
 	}
