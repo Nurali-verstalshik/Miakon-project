@@ -1469,6 +1469,15 @@ details[open] summary:before {
   background: #73869F;
 }
 
+.form_review__title.thanks {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: -20px;
+}
+
 .modal.is-show,
 .overlay.is-show {
   display: block;
