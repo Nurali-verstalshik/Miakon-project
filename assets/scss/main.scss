@@ -4025,6 +4025,11 @@ details[open] summary{
 
 
 @media (min-width: 320px) and (max-width:767px) {
+
+	.about_text div {
+		width: 100%;
+	}
+
 	.tabs {
 		margin-left: unset;
 	}
@@ -4384,6 +4389,49 @@ details {
 }
 .preFooter .leaves {
 	display: none;
+}
+.med_why ul {
+	margin-left: 0;
+}
+.js-open-modal {
+	position: static;
+}
+.contact_info ul {
+	padding: 0;
+}
+#aboutPage section .about_text_col4 p {
+	width: 100%;
+}
+#aboutPage .swiper-button-prev {
+    top: 41px;
+}
+.commrads .doc,
+.med_banks .banks img {
+	box-shadow: unset;
+}
+#aboutPage .swiper-button-next {
+    bottom: 209px;
+}
+.list {
+	margin-top: unset;
+}
+.more-button-wrap .more-button-background {
+    width: 112%;
+}
+.more-button-wrap .more-button-ico::before {
+    transform: rotate(-52deg) translate(2px, 7px);
+}
+.more-button-wrap .more-button-ico::after {
+    transform: rotate(52deg) translate(2px, -6px);
+}
+.product_button {
+    display: block;
+    margin: 0 auto;
+    margin-left: -15px;
+    text-align: center;
+}
+.more-button-wrap .more-button-title {
+    color: #fff;
 }
 }
 
