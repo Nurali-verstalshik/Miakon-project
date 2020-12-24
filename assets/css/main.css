@@ -4487,6 +4487,116 @@ details[open] summary {
     color: #00294C !important;
     margin: 0;
   }
+
+  .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+    color: #FFF;
+    right: -25px;
+    text-align: right;
+    padding-right: 6px;
+    width: 100%;
+    top: -10px;
+  }
+
+  .product_card__images__min a:not(:last-child) {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .breadthums {
+    display: none;
+  }
+
+  .tabs-widget__item a {
+    margin-left: 15px;
+    font-size: 15px;
+  }
+
+  .form_review .form_review__comment {
+    margin-right: 10px;
+  }
+
+  .form {
+    flex-wrap: wrap;
+  }
+
+  .form .form_review__callback {
+    max-width: unset;
+  }
+
+  .contact_info a {
+    color: #00294C;
+  }
+
+  .leaves {
+    display: none;
+  }
+
+  .js-open-modal {
+    position: unset;
+  }
+
+  .form_review__footer .button-text {
+    color: #00294C !important;
+  }
+
+  button.learn-more .button-text {
+    justify-content: center;
+  }
+
+  .med_about .col-md-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .med_work .col-md-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .med_work .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .med_work h2 {
+    max-width: 100%;
+  }
+
+  .about_text {
+    grid-template-columns: repeat(2, 100%);
+  }
+
+  #aboutPage .about_text_col3 {
+    grid-template-columns: 100%;
+  }
+
+  #aboutPage .med_work {
+    border-radius: unset;
+    width: 100%;
+    margin-left: 0;
+    padding-left: unset;
+  }
+
+  .box, .box2 {
+    display: none;
+  }
+
+  #aboutPage .swiper-button-prev {
+    top: 42px;
+  }
+
+  #aboutPage .swiper-container {
+    padding-top: 50px;
+    padding-bottom: 250px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .commrads .doc {
+    box-shadow: unset;
+  }
+
+  #aboutPage .swiper-button-next {
+    bottom: 207px;
+  }
 }
 @media (min-width: 1100px) and (max-width: 1400px) {
   .product_card__desc__column__special {
