@@ -166,62 +166,25 @@
 
 
 
-        <ul class="show">
-          <h3>Категории товаров</h3>
-          <div class="ac-container">
-            <div>
-              <input id="ac-1" name="accordion-1" type="checkbox">
-              <label class="have_sub" for="ac-1">Перчатки</label>
-              <article class="ac-small">
-                <ul class="filter_tab__subcat">
-                  <li> <a href="#" class="active">Подкатегория 1</a> </li>
-                  <li> <a href="#">Подкатегория 1</a> </li>
-                  <li> <a href="#">Подкатегория 1</a> </li>
-                </ul>
-              </article>
-            </div>
-            <div>
-             
-              <label class="not_sub" for="ac-2"> 
-              	<a href="#0">Скальпели</a> 
-              </label>
-
-            </div>
-            <div>
-              
-              <label class="not_sub" for="ac-3"><a href="#0">Медицинская одежда</a></label>
-              
-            </div>
-            <div>
-              
-              <label class="not_sub" for="ac-4"><a href="#0">Маски</a></label>
-
-            </div>
-            <div>
-               
-              <label class="not_sub" for="ac-5"><a href="#0">Инфузионная система</a></label>
-
-            </div>
-            <div>
-              
-              <label class="not_sub" for="ac-6"><a href="#0">Шприцы</a></label>
-
-            </div>
-            <div>
-              <input id="ac-7" name="accordion-1" type="checkbox">
-              <label class="have_sub" for="ac-7">Трансфизионные система</label>
-              <article class="ac-small">
-                <ul class="filter_tab__subcat">
-                  <li> <a href="#1" class="active">Подкатегория 1</a> </li>
-                  <li> <a href="#2">Подкатегория 1</a> </li>
-                  <li> <a href="#3">Подкатегория 1</a> </li>
-                </ul>
-              </article>
-            </div>
-                      <div class="filter_tab__hide">
-                   <div class="arrow arrow-top"></div>
-                 </div>
-          </ul>
+        <ul class="filter_tabs__material hide" class="">
+    <h3>Категории товаров</h3>
+    <ul class="filter_tab__subcat">
+      <!-- <li></li> -->
+      <li v-for="(attrValue, idx) in attrValues" :key="idx">
+        <label class="checkbox-other">
+          <input
+            type="checkbox"
+            :checked="value.includes(attrValue.slug)"
+            @change="onValueChange($event, attrValue.slug)"
+          />
+          <span>{{ attrValue.name }}</span>
+        </label>
+      </li>
+    </ul>
+    <div class="filter_tab__hide" @click="toggleShow">
+      <div class="arrow arrow-top"></div>
+    </div>
+  </ul>
 
 
 
