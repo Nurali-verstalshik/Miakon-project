@@ -1083,9 +1083,11 @@ position: relative;
 }
 .hide .ac-container  {
 	display: none;
+	transition: 0.5s;
 }
 .hide .filter_tab__subcat {
 	display: none;
+	transition: 0.5s;
 }
 .show {
 position: relative;
@@ -1134,6 +1136,7 @@ z-index: 2;
 
 .hide li {
 	display: none;
+	transition: 0.5s;
 }
 .filter_tabs ul:not(:last-child) {
 	position: relative;
