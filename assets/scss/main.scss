@@ -1010,7 +1010,7 @@ position: relative;
 	margin: 0;
 	padding: 0;
 }
-.filter_tabs ul:not(:last-child) {
+.filter_tabs ul  {
 	padding: 20px 30px;
 	background: #FFFFFF;
 	border-radius: 10px;
@@ -1667,6 +1667,16 @@ background-repeat: no-repeat;
 cursor: pointer;
 }
 
+.form_review_text {
+	font-size: 13px;
+	line-height: 150%;
+	color: rgba(255, 255, 255, 0.5);
+	b{
+		font-weight: normal;
+		color: white;
+		border-bottom: 1px solid white;
+	}
+}
 
 /*-------------------------------
 		карточка товара
@@ -3545,7 +3555,9 @@ details {
 }
 
 
-
+.form_review__footer .podrobnee_btn {
+    margin-top: 10px;
+}
 
 
 

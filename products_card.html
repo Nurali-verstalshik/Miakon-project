@@ -116,6 +116,40 @@
 <!-- //header -->
 
 
+<!-- модалка -->
+<div class="modal js-modal" data-modal="modal">
+<span class="close_button js-modal-close"></span>
+
+ <div class="form_review__callback">
+   <div class="form_review__title">
+    <h3>Заявка на запрос стоимости</h3>
+    <p>Прайс товаров придет Вам на электноную почту</p>
+  </div>
+  <div class="form_review__body">
+    <input type="text" placeholder="Введите имя">
+    <input type="text" placeholder="Телефон">
+    <input type="text" placeholder="E-mail">
+  </div>
+  <div class="form_review__footer">
+    <a class="podrobnee_btn" href="#">
+
+      <div class="btn_wrapper">
+        <button class="learn-more">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">Отправить</span>
+        </button>
+      </div>
+    </a>
+  </div>
+</div>
+
+</div>
+<div class="overlay js-modal-overlay"></div>
+  <!-- //модалка -->
+ 
+
 <div class="container-fluid">
  <div class="row">
   <div class="col-12">
@@ -199,15 +233,16 @@
 
   <div class="product_card__desc__column__special">
     <h2>Запросить цену</h2>
-
-          <div class="Button_page">
-            <a class="more-button-wrap" href="products_card.html" data-main-index="">
-              <span class="more-button-background">
-                <span class="more-button-ico"></span>
-              </span>
-              <span class="more-button-title">Запросить цену </span>
-            </a>
-          </div>
+    <a class="js-open-modal " data-modal="modal">
+      <div class="Button_page">
+        <a class="more-button-wrap" href="products_card.html" data-main-index="">
+          <span class="more-button-background">
+            <span class="more-button-ico"></span>
+          </span>
+          <span class="more-button-title">Запросить цену </span>
+        </a>
+      </div>
+    </a>
 
 </div>
 
