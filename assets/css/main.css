@@ -4312,7 +4312,7 @@ details[open] summary {
     position: static;
   }
 
-  .contact_info ul {
+  .filter_tabs .contact_info ul {
     padding: 0;
   }
 
