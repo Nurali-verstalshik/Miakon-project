@@ -4308,7 +4308,7 @@ details[open] summary {
     margin-left: 0;
   }
 
-  .js-open-modal {
+  .preFooter .js-open-modal {
     position: static;
   }
 
@@ -4435,7 +4435,7 @@ details[open] summary {
 
   .hidden {
     position: fixed;
-    right: -350px;
+    right: -550px;
     transition: 1s;
   }
 
@@ -4444,11 +4444,53 @@ details[open] summary {
     right: 0px;
     transition: 1s;
   }
+
+  #filter_page .products .product_filter_header h1 {
+    margin-bottom: 50px;
+  }
+
+  .filter_tabs {
+    overflow: scroll;
+    height: 85vh;
+  }
 }
-@media (min-width: 769px) and (max-width: 1100px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .list, .grid {
     grid-template-columns: repeat(2, 1fr) !important;
     grid-gap: 30px;
+  }
+
+  #filter_page .products .product_filter_header h1 {
+    margin-bottom: 50px;
+  }
+
+  .hidden {
+    position: fixed;
+    right: -750px;
+    transition: 1s;
+  }
+
+  .showed {
+    position: fixed;
+    right: 0px;
+    transition: 1s;
+  }
+
+  .filter_toggler {
+    background-image: url("/assets/img/mobile_filter.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 45px;
+    padding: 25px 0;
+    transition: 1s;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    right: 75px;
+    top: 22px;
   }
 
   .menu__brand, .menu__list {
@@ -4614,6 +4656,10 @@ details[open] summary {
     margin-top: 0px;
   }
 
+  .product_filter_header {
+    margin-bottom: 50px;
+  }
+
   .pagination nav .active a {
     color: #00294C !important;
     margin: 0;
@@ -4749,12 +4795,53 @@ details[open] summary {
   .offer_place {
     display: none;
   }
+
+  .list .product_item img {
+    max-width: 100%;
+  }
+
+  .filter_tabs {
+    overflow: scroll;
+    height: 85vh;
+  }
+}
+@media (min-width: 992px) and (max-width: 1099px) {
+  .showed,
+.hidden,
+.filter_tabs {
+    position: unset;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .filter_tabs ul {
+    min-width: unset;
+  }
+
+  .filter_tabs {
+    background-color: unset;
+  }
+
+  .extra-controls {
+    display: flex;
+    justify-content: center;
+    grid-gap: 5px;
+  }
+
+  .product_size,
+.product_made {
+    font-size: 13px;
+  }
 }
 @media (min-width: 1100px) and (max-width: 1400px) {
   .product_card__desc__column__special {
     width: 100%;
     max-width: 100%;
     margin: 15px 0;
+  }
+
+  .filter_tabs ul {
+    min-width: unset;
   }
 }
 @media (min-width: 1400px) and (max-width: 1668px) {
