@@ -2888,6 +2888,15 @@ details {
   margin-left: -2px;
 }
 
+.preFooter .Button_page {
+  height: 100%;
+  align-items: center;
+}
+
+.preFooter .more-button-title {
+  top: 12px;
+}
+
 .form_review__footer .Button_page {
   margin-top: 15px;
 }
