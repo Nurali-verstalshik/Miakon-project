@@ -2025,6 +2025,7 @@ button:focus {
   margin: 0 75px !important;
   padding: 30px 150px;
   position: relative;
+  overflow: hidden;
   margin-bottom: 230px !important;
 }
 .preFooter h3 {
@@ -2039,15 +2040,15 @@ button:focus {
   display: block;
 }
 .preFooter .leaves {
-  background-image: url("/assets/img/Group375.png");
-  width: 100%;
-  height: 100%;
+  background-image: url("/assets/img/Group_375.png");
+  width: 728px;
+  height: 728px;
   background-repeat: no-repeat;
   position: absolute;
-  top: 0;
-  right: 0;
-  background-position: right;
+  right: -182px;
   z-index: 2;
+  background-size: cover;
+  bottom: -90px;
 }
 .preFooter .btn-center {
   display: flex;
