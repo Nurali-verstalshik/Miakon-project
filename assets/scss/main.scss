@@ -1250,7 +1250,8 @@ z-index: 2;
 }
 
 .ac-container input:checked ~ article.ac-small{
-	height: 90%; 
+	height: 95%;
+	margin-top: -20px; 
 }
 .ac-small {
 	.filter_tab__subcat {
