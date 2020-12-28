@@ -180,7 +180,9 @@ a:hover {
   position: absolute;
   bottom: 27px;
   left: 30px;
+  display: none;
 }
+
 
 .round {
   background-image: url("/assets/img/section.png");
